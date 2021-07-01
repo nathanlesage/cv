@@ -15,7 +15,7 @@ contact:
   - https://www.hendrik-erz.de/
 sections:
   - title: Education
-	items:
+	  items:
       - label: Since 2020
         text: PhD in Analytical Sociology, Linköping University
       - label: 2017

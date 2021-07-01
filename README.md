@@ -85,8 +85,8 @@ contact:
 # has a title, which will be -- you again guessed it: the title of it.
 sections:
   - title: Education
-  # A second property is "items". Items is a list of list items.
-	items:
+    # A second property is "items". Items is a list of list items.
+	  items:
         # The "label" will be written in the accent colour to the left.
         # You can also leave off "label" completely and only provide the
         # "text" property. In that case, the text will be correctly aligned
