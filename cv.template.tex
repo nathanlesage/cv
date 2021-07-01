@@ -1,0 +1,160 @@
+% This template can be used to generate a CV from a Markdown file with a
+% YAML frontmatter. This template was created by Hendrik Erz <hendrik@zettlr.com>
+
+% We're using the KOMA Article class
+\documentclass[11pt,a4paper]{scrartcl}
+
+% Some packages useful for the font handling
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+% sectsty allows us to modify how the headings look.
+\usepackage{sectsty}
+
+% The xcolor package provides some color functionality
+\usepackage{xcolor}
+
+% Define default colors
+\definecolor{AccentColor}{rgb}{0.5,0.0,0.4}
+\definecolor{TextColor}{rgb}{0.2,0.2,0.2}
+
+% Allow the user to redefine the colors
+$if(accentColor)$
+\definecolor{AccentColor}{rgb}{$accentColor$}
+$endif$
+$if(textColor)$
+\definecolor{TextColor}{rgb}{$textColor$}
+$endif$
+
+% The sections being used will all be colored in accent
+\partfont{\color{AccentColor}}
+\sectionfont{\color{TextColor}}
+\subsectionfont{\color{TextColor}}
+
+% Document fonts
+\setmainfont{Roboto}
+\setsansfont{Roboto}
+
+% Again, allow user-overridable fonts
+$if(mainfont)$
+\setmainfont{$mainfont$}
+$endif$
+$if(sansfont)$
+\setsansfont{$sansfont$}
+$endif$
+
+% i18n / l10n
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+
+% Allow the user to set the language (stolen from the Pandoc template)
+$if(lang)$
+\setmainlanguage[$for(polyglossia-lang.options)$$polyglossia-lang.options$$sep$,$endfor$]{$polyglossia-lang.name$}
+$for(polyglossia-otherlangs)$
+\setotherlanguage[$for(polyglossia-otherlangs.options)$$polyglossia-otherlangs.options$$sep$,$endfor$]{$polyglossia-otherlangs.name$}
+$endfor$
+$endif$
+
+% For better page headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % No page header
+\cfoot{\color{TextColor}\thepage} % Centered page number
+% Prevent the rulers from showing up
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Obligatory URL stuff: Make sure links look like normal
+% text and can be broken up to fit the page flow.
+\usepackage[obeyspaces,spaces]{url}
+\usepackage[breaklinks,hidelinks]{hyperref}
+% This command makes URLs look like the rest of the text
+\urlstyle{same}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+% Margin options
+\usepackage[
+  left=3cm,
+  right=3cm,
+  top=2cm,
+  bottom=3cm
+]{geometry}
+
+
+% The package enumitem is the central package for the CV sections.
+% It is used to display a label in our accent color and also aligns
+% the text properly.
+% We're choosing a very narrow label width, so don't overdo it!
+% Please also note, if you're customising this, that labelsep should
+% be the opposite of itemindent, since otherwise all lines except the
+% first one of an item's "text" will be wrongly indented.
+\usepackage{enumitem}
+\setlist[description]{labelwidth=2cm,itemindent=-1cm,labelsep=1cm,align=right,left=2cm,font=\color{AccentColor}}
+
+% Remove all heading numberings (even from the custom body-text)
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% Metadata for the PDF
+\author{$if(name)$$name$$endif$}
+\title{$if(name)$$name$$endif$ - CV}
+
+\begin{document}
+% Immediately switch to text color
+\color{TextColor}
+
+% Main heading is the name. Warn the user if they forgot the property.
+\part*{$if(name)$$name$$else$Please provide a name!$endif$}
+
+% We're using "minipages" to display the address versus contact info
+% in a two-column layout. Note that the end of the first minipage
+% MUST be on the same line as the begin of the second (which we do
+% by using a percent-sign IMMEDIATELY after the end.)
+\begin{minipage}[t]{0.48\textwidth}
+$if(occupation)$
+\textbf{$occupation$} \\
+$endif$
+% Print the address line(s)
+$for(address)$$address$ $sep$ \\$endfor$
+\end{minipage}%
+\begin{minipage}[t]{0.48\textwidth}
+\begin{flushright}
+% Print contact info if there is some. Everything is treated as an URL.
+$if(contact)$
+  \textbf{Contact} \\
+    $for(contact)$
+    \url{$contact$}$sep$ \\
+    $endfor$
+$endif$
+\end{flushright}
+\end{minipage}
+
+% Here comes the custom body text (the text from the Markdown document)
+$body$
+
+% Separate the CV header from the sections with a nice ruler.
+{\color{AccentColor}\rule{\linewidth}{0.5mm}}
+
+% Now come the sections
+$for(sections)$
+\section*{$sections.title$}
+
+% NOTE: The "description" is being set up in the header with the setlist-command
+\begin{description}
+
+$for(sections.items)$
+\item [$if(sections.items.label)$$sections.items.label$$endif$] $for(sections.items.text)$$sections.items.text$$sep$ \newline $endfor$ 
+$endfor$
+
+\end{description}
+$endfor$
+
+\end{document}
