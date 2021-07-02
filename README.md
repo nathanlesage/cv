@@ -4,9 +4,7 @@
 
 ![CV.png](CV.png)
 
-While I never especially liked Microsoft Word, I was especially annoyed by it after many years of exclusively writing in Markdown when I had to use it because I had no CV template set up but was under the pressure of a deadline. Several times throughout the process of having to write a CV from scratch in Word the thought did occur to me to murder something.
-
-This is why I decided that a much better method for my own piece of mind would be to finally take the challenge upon me to create my very own CV template, which you can find in this repository.
+While I never especially liked Microsoft Word, I was especially annoyed by it after many years of exclusively writing in Markdown when I had to use it because I had no CV template set up but was under the pressure of a deadline. Several times throughout the process of writing that CV from scratch in Word the thought did occur to me to murder something. Because such thoughts are never good for one's blood pressure, I finally took the challenge to create my very own CV template, which you can find in this repository.
 
 [Take me right to the instructions](#how-to-use)!
 
@@ -14,8 +12,8 @@ This is why I decided that a much better method for my own piece of mind would b
 
 You might ask why I saw it necessary to create yet another CV template, when the internet is littered with them? Good question! There are a few reasons why I chose this road:
 
-- **Pandoc-Compatible**: Most templates are designed to work with LaTeX directly, but I personally prefer Pandoc, since Markdown (and the accompanying data structures) are just much cleaner than raw TeX source
-- **Single-File**: Even those templates that can work with Pandoc still have quite a lot of files coming with them, and I prefer (at least for simple projects such as a CV) a single-file template
+- **Pandoc-Compatible**: Most templates are designed to work with LaTeX directly, but I personally prefer Pandoc, since Markdown (and the accompanying data structures) are just much cleaner than raw TeX source.
+- **Single-File**: Even those templates that can work with Pandoc still have quite a lot of files coming with them, and I prefer (at least for simple projects such as a CV) a single-file template.
 - **Few Dependencies**: We’re talking about a CV here, one of whose main aims is to be readable and minimalistic. Many templates I’ve seen had me install quite a few additional packages. This template tries to be modest in this regard.
 - **Straight-forward data structures**: A CV is basically a PDF-version of a lot of data on your own life. Whenever something changes, do you really want to add the whole boilerplate code just for that one new employment? By making use of Pandoc’s YAML frontmatters, we can do all of this with much less code.
 - **Learning**: The least-important reason from your perspective is that I like to try out stuff. This CV prove a good opportunity to freshen up my knowledge of TeX, Pandoc templates, and the whole process of crafting a final PDF file.
@@ -24,19 +22,19 @@ But now you certainly want to get started, right? So let’s see how!
 
 ## How To Use
 
-This repository basically contains four files:
+This repository basically contains five files:
 
-* README.md: This file
-* CV.md: The Markdown source code that also includes all of the data
-* cv.template.tex: The actual CV template
-* CV.pdf: A rendered version of the CV, built using Zettlr
-* CV.png: The first page of my CV for demonstration purposes (not necessarily up to date)
+* `README.md`: This file
+* `CV.md`: The Markdown source code that also includes all of the data
+* `cv.template.tex`: The actual CV template
+* `CV.pdf`: A rendered version of the CV, built using Zettlr
+* `CV.png`: The first page of my CV for demonstration purposes (not necessarily up to date)
 
-What you’ll need personally is basically just the CV.md and the cv.template.tex files.
+What you’ll need personally is basically just the `CV.md` and the `cv.template.tex` files.
 
 ### Adding Your Own Data
 
-After downloading the files you want to edit the file, since it obviously includes my data, not yours. I have attempted to structure it as simple as possible. There are basically two types of data that you can use:
+After downloading the files you want to edit the file `CV.md`, since it obviously includes my data, not yours. I have attempted to structure it as simple as possible. There are basically two types of data that you can use:
 
 - General metadata (name, occupation, address, and some template stuff)
 - Sections with the actual data
@@ -71,7 +69,7 @@ occupation: PhD Student
 # something. Or, leave it out completely!
 # Remember: each list item is one line.
 address:
-  - Institute for Analytical Sociology # Imagine an "\newline" here
+  - Institute for Analytical Sociology # Imagine a "\newline" here
   - Linköping University # Same
   - 601 74 Norrköping, Sweden # No newline here.
 # "Contact" is also basically just a list of strings which you can omit
