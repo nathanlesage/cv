@@ -7,15 +7,21 @@
 name: Hendrik Erz
 occupation: PhD Student
 address:
-  - Institute for Analytical Sociology
+  - Institute for Analytical Sociology (IAS)
   - Linköping University
+  - 
+  - Kopparhammaren 7
+  - Kungsgatan 56, Entrance 56D
   - 601 74 Norrköping, Sweden
 contact:
-  - hendrik.erz@liu.se
-  - https://www.hendrik-erz.de/
+  - "Email: hendrik.erz\\@liu.se"
+  - "Website: hendrik-erz.de"
+  - ""
+  - "Twitter: \\@sahiralsaid"
+  - "Mastodon: \\@hendrikerz@scholar.social"
 sections:
   - title: Education
-	  items:
+    items:
       - label: Since 2020
         text: PhD in Analytical Sociology, Linköping University
       - label: 2017
@@ -54,35 +60,71 @@ sections:
         text: "Zygmunt Bauman: Die Angst vor den anderen (Review). Widerspruch 70/2017, 164–168."
   - title: Teaching
     items:
-      - label: Courses
-        text: Introduction to Political Science (Undergraduate, University of Bonn)
-      - text: Scientific Writing (Undergraduate, University of Bonn)
-      - text:
-        - Introduction to Karl Marx Capital (Undergraduate, University of Bonn)
-        - ""
-      - label: Tutorials
-        text: Methods for Quantitative Sociology (Undergraduate, University of Bonn)
-  - title: Presentations
-    items:
+      - label: 2022
+        text:
+          - "**Logic of Social Inquiry**"
+          - M.Sc.; Teaching Assistant; Linköping University
+      - label: 2021
+        text:
+          - "**Logic of Social Inquiry**"
+          - M.Sc.; Teaching Assistant; Linköping University
       - label: 2019
         text:
-          - "From Arab Spring to Gilets Jaunes: Riots and the annihilation of legality."
+          - "**Introduction to Political Science**"
+          - B.A.; Teacher; University of Bonn
+      - text:
+          - "**Scientific Writing**"
+          - B.A.; Teacher; University of Bonn
+      - label: 2018
+        text:
+          - "**Introduction to Political Science**"
+          - B.A.; Teacher; University of Bonn
+      - text:
+        - "**Introduction to Karl Marx' Capital (Reading Course)**"
+        - B.A.; Course Director; University of Bonn
+      - label: 2015
+        text:
+          - "**Tutorial: Methods for Quantitative Sociology**"
+          - B.A.; Teaching Assistant; University of Bonn
+  - title: Presentations
+    items:
+      - label: 2022
+        text:
+          - "**Text als Daten: Extraktion von Variablen mittels LSTM-Netzwerken**"
+          - "Kongress der Deutschen Gesellschaft für Soziologie, Bielefeld, Germany."
+      - text:
+          - "**Extracting Agency from Textual Data Using LSTM Networks**"
+          - "Conference of the International Network of Analytical Sociologists, Florence, Italy."
+      - text:
+        - "**Technological A11y: Zettlr Beyond the Code**"
+        - "Invited Talk; Staatliche Hochschule für Gestaltung, Karlsruhe, Germany"
+      - label: 2019
+        text:
+          - "**From Arab Spring to Gilets Jaunes: Riots and the annihilation of legality**"
           - "Historical Materialism Athens Conference, Greece."
       - label: 2017
         text:
-          - "Terrorismus und der War on Terror."
-          - "Studentischer Soziologiekongress, TU Chemnitz, Germany."
+          - "**Terrorismus und der War on Terror**"
+          - "Master Thesis Presentation, Studentischer Soziologiekongress, TU Chemnitz, Germany."
   - title: Volunteering
     items:
-      - text: "Soziologiemagazin, Head of Editorial Board (2020–present)"
+      - label: Since 2020
+        text: "Soziologiemagazin, Head of Editorial Board"
+      - label: Since 2017
+        text: "Zettlr Markdown Editor, Project Maintainer"
   - title: Languages
     items:
       - text: "German (native), English (fluent, C1), French (Moderate, A2)"
   - title: "Programming Languages & Frameworks"
     items:
-      - text: "JavaScript, TypeScript, HTML, LESS/SCSS/CSS, Rust, C/C++, PHP, Python, Stata, matplotlib, numpy, pandas, PyTorch, Node.js"
+      - label: Scientific
+        text: "Python, Stata, matplotlib, numpy, pandas, PyTorch"
+      - label: Front-End
+        text: "JavaScript/TypeScript, HTML, LESS/SCSS/CSS"
+      - label: Back-End
+        text: "Node.js, PHP, Rust, C/C++"
 ---
 
 # Research Interests
 
-Sociology of Culture, Quantitative Sociology, Natural Language Processing, Machine Learning, Computational Social Science
+Sociology of Culture, Quantitative Sociology, Natural Language Processing, Large Language Models, Text As Data, Deep larning/Machine Learning, Computational Social Science
