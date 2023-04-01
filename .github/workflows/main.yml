@@ -20,9 +20,15 @@ jobs:
           ref: master
       - name: Setup dependencies
         run: |
-          sudo apt install texlive texlive-xetex pandoc
-          sudo tlmgr init-usertree
-          sudo tlmgr update --all
+          sudo apt install pandoc
+          cd /tmp
+          wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+          zcat < install-tl-unx.tar.gz | tar xf -
+          cd install-tl-*
+          sudo perl ./install-tl --no-interaction
+          echo "/usr/local/texlive/2023/bin/x86_64-linux" >> $GITHUB_PATH
+      - name: Install additional packages
+        run: |
           sudo tlmgr install koma-script
       - name: Produce PDF
         run: |
