@@ -20,9 +20,13 @@ jobs:
           ref: master
       - name: Setup dependencies
         run: |
-          sudo apt install texlive-base pandoc
+          sudo apt install texlive texlive-xetex pandoc
+          sudo tlmgr repository add ftp://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2021/tlnet-final
+          sudo tlmgr repository list
+          sudo tlmgr repository remove http://mirror.ctan.org/systems/texlive/tlnet
+          sudo tlmgr option repository ftp://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2021/tlnet-final
           sudo tlmgr init-usertree
-          sudo tlmgr install koma-script
+          sudo tlmgr --verify-repo=none install koma-script
       - name: Produce PDF
         run: |
           pandoc CV.md --template=cv.template.tex --pdf-engine=xelatex -o CV.pdf
