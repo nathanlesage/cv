@@ -21,7 +21,7 @@ jobs:
       - name: Setup dependencies
         run: |
           sudo apt install texlive-base pandoc
-          tlmgr install koma-script
+          sudo tlmgr install koma-script
       - name: Produce PDF
         run: |
           pandoc CV.md --template=cv.template.tex --pdf-engine=xelatex -o CV.pdf
