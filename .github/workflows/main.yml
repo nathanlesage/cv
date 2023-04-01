@@ -11,6 +11,7 @@ on:
 
 jobs:
   create_pdf:
+    name: Create PDF
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,7 +21,7 @@ jobs:
       - name: Run Pandoc
         uses: docker://pandoc/latex:3.1
         with:
-          args: --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
+          # args: --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
           entrypoint: 'echo "Hello, world!'
       - name: Commit PDF
         run: |
