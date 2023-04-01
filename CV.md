@@ -88,6 +88,13 @@ sections:
           - B.A.; Teaching Assistant; University of Bonn
   - title: Presentations
     items:
+      - label: 2023
+        text:
+          - "**Taming Rogue Ethics: The Case for a Unified and Fair IRB Procedure**"
+          - "STS-hub.de Conference, Rheinisch-Westfälische Technische Hochschule (RWTH) Aachen, Germany"
+      - text:
+          - "**Disentangling the Discourse on U.S. Economic Policymaking**"
+          - "Textual Politics Conference, Sciences Po, Paris, France."
       - label: 2022
         text:
           - "**Text als Daten: Extraktion von Variablen mittels LSTM-Netzwerken**"
