@@ -18,11 +18,13 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: master
-      - name: Run Pandoc
-        uses: docker://pandoc/latex:3.1
-        with:
-          # args: --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
-          entrypoint: "echo 'Hello, world!'"
+      - name: Setup dependencies
+        run: |
+          sudo apt install texlive-base pandoc
+          tlmgr install koma-script
+      - name: Produce PDF
+        run: |
+          pandoc CV.md --template=cv.template.tex --pdf-engine=xelatex -o CV.pdf
       - name: Commit PDF
         run: |
           git add -A
