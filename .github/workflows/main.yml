@@ -22,7 +22,7 @@ jobs:
         uses: docker://pandoc/latex:3.1
         with:
           # args: --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
-          entrypoint: 'echo "Hello, world!'
+          entrypoint: "echo 'Hello, world!'"
       - name: Commit PDF
         run: |
           git add -A
