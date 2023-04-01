@@ -27,7 +27,7 @@ jobs:
           ls -al
           # cd install-tl-* # TODO: Hardcoding is bad!
           cd install-tl-20230401
-          sudo perl ./install-tl --no-interaction
+          sudo perl ./install-tl --scheme=small --no-interaction
           echo "/usr/local/texlive/2023/bin/x86_64-linux" >> $GITHUB_PATH
       - name: Install additional packages
         run: |
