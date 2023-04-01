@@ -1,0 +1,31 @@
+name: Update PDF
+# Derived from this handy tutorial: https://github.com/pandoc/pandoc-action-example
+
+# Runs whenever either the CV.md or the template changes.
+on:
+  push:
+    paths:
+      - CV.md
+      - cv.template.tex
+
+jobs:
+  create_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: master
+      - name: Run Pandoc
+        uses: docker://pandoc/latex:3.1
+        with:
+          args: --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
+      - name: Commit PDF
+        run: |
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "chore: Recreate PDF"
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
