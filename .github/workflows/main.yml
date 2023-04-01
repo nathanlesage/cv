@@ -7,6 +7,7 @@ on:
     paths:
       - CV.md
       - cv.template.tex
+  workflow_dispatch: {}
 
 jobs:
   create_pdf:
