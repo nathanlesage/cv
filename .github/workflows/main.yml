@@ -21,6 +21,7 @@ jobs:
       - name: Setup dependencies
         run: |
           sudo apt install texlive-base pandoc
+          sudo tlmgr init-usertree
           sudo tlmgr install koma-script
       - name: Produce PDF
         run: |
