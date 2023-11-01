@@ -42,6 +42,8 @@ sections:
           - "University of Bonn"
   - title: Publications
     items:
+      - label: 2023
+        text: "Text als Daten. Extraktion von Variablen mittels LSTM-Netzwerken (with Anastasia Menshikova), in: Paula-Irene Villa (ed.) 2023: _Polarisierte Welten. Verhandlungen des 41. Kongresses der Deutschen Gesellschaft für Soziologie 2022_. \\url{https://publikationen.soziologie.de/index.php/kongressband_2022/article/view/1693}"
       - label: 2020
         text: "Operative Porträts: eine Bildgeschichte der Identifizierbarkeit von Lavater bis Facebook. Von Roland Meyer. Soziologiemagazin 2020, 75–81. \\url{https://doi.org/10.3224/soz.v13i1.07}"
       - label: 2020
@@ -60,6 +62,13 @@ sections:
         text: "Zygmunt Bauman: Die Angst vor den anderen (Review). Widerspruch 70/2017, 164–168."
   - title: Teaching
     items:
+      - label: 2023
+        text:
+          - "**Summer Institute for Computational Social Sciences (SICSS)**"
+          - Lecture and workshop on Computational Text Analysis
+      - text:
+          - "**Logic of Social Inquiry**"
+          - M.Sc.; Teaching Assistant; Linköping University
       - label: 2022
         text:
           - "**Logic of Social Inquiry**"
@@ -90,6 +99,12 @@ sections:
     items:
       - label: 2023
         text:
+          - "**Language Models from the Sweatshop? Towards Guidelines For CSS Researchers to Avoid Ethical and Legal Issues With Off-The-Shelf Software.**"
+          - "International Conference on Computational Social Sciences (IC2S2), Copenhagen, Denmark"
+      - text:
+          - "**From Speeches to Bills: How do Discursive Dynamics Shape Policymaking in U.S. Congress?**"
+          - "Conference of the International Network of Analytical Sociologists (INAS), Princeton, United States"
+      - text:
           - "**Taming Rogue Ethics: The Case for a Unified and Fair IRB Procedure**"
           - "STS-hub.de Conference, Rheinisch-Westfälische Technische Hochschule (RWTH) Aachen, Germany"
       - text:
