@@ -1,47 +1,62 @@
 # Curriculum Vitae LaTeX Template
 
-> I use this CV template to create my own CV, and so can you!
+> I use this CV template to create my own CV, and so can you. It involves three steps: (1) clone this repository; (2) edit the data; (3) export as an organized PDF CV.
+
+## Preview
+
+When everything is set up, the CV can look like this:
 
 ![CV.png](CV.png)
+
+## Why Yet Another CV Template?
 
 While I never especially liked Microsoft Word, I was especially annoyed by it after many years of exclusively writing in Markdown when I had to use it because I had no CV template set up but was under the pressure of a deadline. Several times throughout the process of writing that CV from scratch in Word the thought did occur to me to murder something. Because such thoughts are never good for one's blood pressure, I finally took the challenge to create my very own CV template, which you can find in this repository.
 
 [Take me right to the instructions](#how-to-use)!
 
-## Why Yet Another CV Template?
-
 You might ask why I saw it necessary to create yet another CV template, when the internet is littered with them? Good question! There are a few reasons why I chose this road:
 
 - **Pandoc-Compatible**: Most templates are designed to work with LaTeX directly, but I personally prefer Pandoc, since Markdown (and the accompanying data structures) are just much cleaner than raw TeX source.
-- **Single-File**: Even those templates that can work with Pandoc still have quite a lot of files coming with them, and I prefer (at least for simple projects such as a CV) a single-file template.
-- **Few Dependencies**: We’re talking about a CV here, one of whose main aims is to be readable and minimalistic. Many templates I’ve seen had me install quite a few additional packages. This template tries to be modest in this regard.
-- **Straight-forward data structures**: A CV is basically a PDF-version of a lot of data on your own life. Whenever something changes, do you really want to add the whole boilerplate code just for that one new employment? By making use of Pandoc’s YAML frontmatters, we can do all of this with much less code.
-- **Learning**: The least-important reason from your perspective is that I like to try out stuff. This CV prove a good opportunity to freshen up my knowledge of TeX, Pandoc templates, and the whole process of crafting a final PDF file.
+- **Single-File-Template**: Even those templates that can work with Pandoc still have quite a lot of files coming with them, and I prefer (at least for simple projects such as a CV) a single-file template.
+- **Few Dependencies**: We’re talking about a CV here, whose main aims are to be readable and minimalistic. Many templates I’ve seen had me install quite a few additional packages. This template tries to be modest in this regard.
+- **Straight-forward data structures**: A CV is basically a PDF-version of an Excel spreadsheet of your life. Whenever something changes, do you really want to add the whole boilerplate code just for that one new employment? By making use of Pandoc’s YAML frontmatters, we can do all of this with much less code.
+- **Learning**: The least-important reason from your perspective is that I like to try out stuff. This CV proved a good opportunity to freshen up my knowledge of TeX, Pandoc templates, and the whole process of crafting a final PDF file.
 
 But now you certainly want to get started, right? So let’s see how!
 
 ## How To Use
 
-This repository basically contains five files:
+### Step 1: Getting the Files
 
-* `README.md`: This file
-* `CV.md`: The Markdown source code that also includes all of the data
-* `cv.template.tex`: The actual CV template
-* `CV.pdf`: A rendered version of the CV, built using Zettlr
-* `CV.png`: The first page of my CV for demonstration purposes (not necessarily up to date)
+The first step is to either fork this repository, or to download it to your computer. Forking has the benefit that you can edit the CV data from your browser, downloading may be a bit cleaner.
 
-What you’ll need personally is basically just the `CV.md` and the `cv.template.tex` files.
+You need to download only two files: The `CV.md` which contains the data, and the `cv.template.tex` file that contains the template.
 
-### Adding Your Own Data
+### Step 2: Adding Your Data
 
-After downloading the files you want to edit the file `CV.md`, since it obviously includes my data, not yours. I have attempted to structure it as simple as possible. There are basically two types of data that you can use:
+After downloading the files, you'll want to edit the file `CV.md`. It includes my data which should give you a preview of what you can do. Change this data to include yours instead of mine. I have attempted to keep its structure as simple as possible. There are two types of data that you can use:
 
-- General metadata (name, occupation, address, and some template stuff)
+- General metadata (name, occupation, address, and some templating stuff)
 - Sections with the actual data
 
-Some general notes: Most fields can contain Markdown code so that you can, e.g., emphasise certain portions of text. But try to be sparse with this (remember: CVs are clean, not street carnival). Additionally, a lot of the properties allow multiple lines of text. In order to do so, provide a list of strings. They will be delimited by `\newline` in the output. Of course, you can just add a single string in the property if you don’t want multiple lines. Lastly, if you don’t need something, you can basically leave off the property and the template should still compile.
+Some general notes: Most fields can contain Markdown code so that you can, e.g., emphasise certain portions of text. Additionally, a lot of the properties allow multiple lines of text. In order to do so, provide a list of strings. They will be delimited by `\newline` in the output. Of course, you can just add a single string in the property if you don’t want multiple lines. Lastly, if you don’t need something, you can basically leave off the property and the template should still compile.
 
 Lastly, I should mention that you can add some sections that do not fit the list-like style of the rest of the CV. I personally use that to add my research interests, but you might add something else. Whatever is the actual contents of your Markdown document (not the YAML frontmatter) will be displayed as-is between the occupation/address/contact header and the horizontal ruler that divides that from the tabular data.
+
+### Step 3: Create the PDF
+
+The last step is to compile the CV to PDF. This repository contains a GitHub Actions workflow, so you can do this directly on GitHub. This way whenever you change anything regarding the data, GitHub will automatically compile the updated PDF file for you. The command that it runs is the following:
+
+```
+pandoc --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
+```
+
+> [!TIP]
+> The Actions workflow will install the following required Ubuntu packages. These may differ if you want to export locally on Windows or macOS. Refer to the Pandoc and LaTeX manuals in this case.
+>
+> `sudo apt install pandoc fonts-roboto texlive-base texlive-xetex texlive-latex-extra texlive-lang-english`
+
+## Reference
 
 In order to save space, here’s just some YAML code where I commented all possible values that you can use in the frontmatter and how you can use them:
 
@@ -112,22 +127,8 @@ Plus, even though it _is_ quite the effort to get your list of publications in t
 
 > One final note, though! There will certainly be links inside your references. Make sure to surround them with `\\url{}`. The reason is that Pandoc uses slightly different syntax to auto-link these which will look extremely ugly. I’ve configured `\url{}` to look good, but not the Pandoc version. Plus, note the double-backslash. A single is not enough!
 
-### Building
-
-There are two ways of using the template: Either by running Pandoc directly on it, or by using an editor (completely egoistical suggestion: Use [Zettlr](https://github.com/Zettlr/Zettlr) for this!).
-
-With Pandoc, the full command looks like this:
-
-```bash
-pandoc CV.md --template=cv.template.tex --pdf-engine=xelatex -o CV.pdf
-```
-
-> Note that I’m explicitly selecting the XeLaTeX engine, which is necessary for a few of the packages. If you have a LaTeX distribution installed on your computer, chances are almost certain that XeLaTeX is part of it!
-
-If you want to use Zettlr the simplest way is to load the full folder, open `CV.md`, adapt it to your needs, select the template as the PDF template, and click export whenever you wanna see how it looks! Note that you unfortunately cannot specify the template in the YAML frontmatter itself, so you need to make sure to always comment out the CV template when you’re not working on the CV. Otherwise the results might be … interesting.
-
 ## License
 
 Since it wasn’t that much effort and since attribution with CVs is pretty difficult anyways, I hereby license the template file (obviously not my personal data!) using [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). That means: you can just use the template however you like. But please don’t impersonate me in your applications/on your website.
 
-**I’d be pretty happy if you could nevertheless give me a [shoutout on Twitter](https://www.twitter.com/sahiralsaid) if you found that template useful. ❤️**
+**I’d be pretty happy if you could give me a [shoutout on Bluesky](https://bsky.app/profile/hendrikerz.bsky.social) if you found that template useful. ❤️**
