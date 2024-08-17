@@ -27,12 +27,17 @@ jobs:
       - name: Produce PDF
         run: |
           pandoc --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
+      # Apparently we have to explicitly set the git parameters here
+      - name: Set Git config
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
       - name: Commit PDF
         run: |
           git add -A
           git diff-index --quiet HEAD || git commit -m "chore: Recreate PDF"
       - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
