@@ -20,29 +20,10 @@ jobs:
           ref: master
       - name: Install Dependencies
         run: |
-          sudo apt install pandoc texlive-base texlive-xetex texlive-latex-extra texlive-lang-english
-      - name: Run Pandoc
+          sudo apt install pandoc fonts-roboto texlive-base texlive-xetex texlive-latex-extra texlive-lang-english
+      - name: Produce PDF
         run: |
           pandoc --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
-      # - name: Run Pandoc
-      #   uses: docker://pandoc/extra:3.1
-      #   with:
-      #     args: --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
-      # - name: Setup dependencies
-      #  run: |
-      #    sudo apt install pandoc
-      #    cd /tmp
-      #    wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-      #    zcat < install-tl-unx.tar.gz | tar xf -
-      #    ls -al
-      #    # cd install-tl-* # TODO: Hardcoding is bad!
-      #    cd install-tl-20230401
-      #    # NOTE: Using scheme "small" already includes what we need
-      #    sudo perl ./install-tl --scheme=small --no-interaction
-      #    echo "/usr/local/texlive/2023/bin/x86_64-linux" >> $GITHUB_PATH
-      #- name: Produce PDF
-      #  run: |
-      #    pandoc CV.md --template=cv.template.tex --pdf-engine=xelatex -o CV.pdf
       - name: Commit PDF
         run: |
           git add -A
