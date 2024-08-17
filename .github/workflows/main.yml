@@ -20,7 +20,7 @@ jobs:
           ref: master
       - name: Install Dependencies
         run: |
-          sudo apt install pandoc texlive-base xelatex texlive-latex-extra texlive-lang-english
+          sudo apt install pandoc texlive-base texlive-xetex texlive-latex-extra texlive-lang-english
       - name: Run Pandoc
         run: |
           pandoc --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
