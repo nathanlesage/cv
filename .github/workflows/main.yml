@@ -9,13 +9,16 @@ on:
       - cv.template.tex
   workflow_dispatch: {}
 
+permissions:
+  contents: write
+
 jobs:
   create_pdf:
     name: Create PDF
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: master
       - name: Install Dependencies
