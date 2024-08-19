@@ -22,11 +22,22 @@ jobs:
         with:
           ref: master
       - name: Install Dependencies
+        # Pandoc = self-explanatory
+        # fonts-roboto = The main font I use
+        # texlive-base = The LaTeX base package
+        # texlive-xetex = The XeLaTeX compiler
+        # texlive-latex-extra = A small set of additional TeX packages
+        # texlive-lang-english = Language data for English
+        # poppler-utils = Required for the automated PDF->PNG conversion later in this workflow.
         run: |
-          sudo apt install pandoc fonts-roboto texlive-base texlive-xetex texlive-latex-extra texlive-lang-english
+          sudo apt install pandoc fonts-roboto texlive-base texlive-xetex texlive-latex-extra texlive-lang-english poppler-utils
       - name: Produce PDF
         run: |
           pandoc --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
+      - name: Update Preview PNG
+        # See https://askubuntu.com/a/50180
+        run: |
+          pdftoppm CV.pdf CV -png -f 1 -singlefile
       # Apparently we have to explicitly set the git parameters here
       - name: Set Git config
         run: |
