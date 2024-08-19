@@ -105,13 +105,13 @@ sections:
         text:
           - "**Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software**"
           - "Conference of the Nordic Sociological Association (NSA) 2024, Norrköping, Sweden (in session Pretrained models and sociology)"
-        - text:
+      - text:
           - "**Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990**"
           - "Conference of the American Sociological Association (ASA) 2024, Montréal, Canada"
-        - text:
+      - text:
           - "**Markets as actors: Congressional speech between regulation and market freedom**"
           - "Conference of the International Network of Analytical Sociologists (INAS), Leipzig, Germany"
-        - text:
+      - text:
           - "**Economic Policymaking in U.S. Congress** (Lightning Talk)"
           - "Swedish Conference on Computational Social Science, Uppsala, Sweden"
       - label: 2023
