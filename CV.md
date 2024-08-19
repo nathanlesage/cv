@@ -7,23 +7,27 @@
 name: Hendrik Erz
 occupation: PhD Student
 address:
-  - Institute for Analytical Sociology (IAS)
-  - Linköping University
-  - 
-  - Kopparhammaren 7
-  - Kungsgatan 56, Entrance 56D
-  - 601 74 Norrköping, Sweden
+  - "Institute for Analytical Sociology (IAS)"
+  - "Linköping University"
+  - ""
+  - "Kopparhammaren 7"
+  - "Kungsgatan 56, Entrance 56D"
+  - "601 74 Norrköping, Sweden"
 contact:
   - "Email: hendrik.erz\\@liu.se"
   - "Website: hendrik-erz.de"
   - ""
-  - "Twitter: \\@sahiralsaid"
+  - "Bluesky: \\@hendrikerz.bsky.social"
   - "Mastodon: \\@hendrikerz@scholar.social"
+  - "Twitter: \\@sahiralsaid"
 sections:
   - title: Education
     items:
       - label: Since 2020
-        text: PhD in Analytical Sociology, Linköping University
+        text:
+          - "**PhD in Analytical Sociology, Linköping University**"
+          - "Supervisors: Jacob Habinek, Étienne Ollion"
+          - "(expected: 2025)"
       - label: 2017
         text: M.A. in Sociology, University of Bonn
       - label: 2014
@@ -97,6 +101,19 @@ sections:
           - B.A.; Teaching Assistant; University of Bonn
   - title: Presentations
     items:
+      - label: 2024
+        text:
+          - "**Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software**"
+          - "Conference of the Nordic Sociological Association (NSA) 2024, Norrköping, Sweden (in session Pretrained models and sociology)"
+        - text:
+          - "**Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990**"
+          - "Conference of the American Sociological Association (ASA) 2024, Montréal, Canada"
+        - text:
+          - "**Markets as actors: Congressional speech between regulation and market freedom**"
+          - "Conference of the International Network of Analytical Sociologists (INAS), Leipzig, Germany"
+        - text:
+          - "**Economic Policymaking in U.S. Congress** (Lightning Talk)"
+          - "Swedish Conference on Computational Social Science, Uppsala, Sweden"
       - label: 2023
         text:
           - "**Language Models from the Sweatshop? Towards Guidelines For CSS Researchers to Avoid Ethical and Legal Issues With Off-The-Shelf Software.**"
@@ -130,13 +147,15 @@ sections:
           - "Master Thesis Presentation, Studentischer Soziologiekongress, TU Chemnitz, Germany."
   - title: Volunteering
     items:
-      - label: Since 2020
+      - label: 2020-2024
         text: "Soziologiemagazin, Head of Editorial Board"
+      - label: Since 2018
+        text: "Soziologiemagazin"
       - label: Since 2017
         text: "Zettlr Markdown Editor, Project Maintainer"
   - title: Languages
     items:
-      - text: "German (native), English (fluent, C1), French (Moderate, A2)"
+      - text: "German (native), English (fluent, C1), Swedish (Moderate, A2), French (Moderate, A2)"
   - title: "Programming Languages & Frameworks"
     items:
       - label: Scientific
@@ -149,4 +168,4 @@ sections:
 
 # Research Interests
 
-Sociology of Culture, Quantitative Sociology, Natural Language Processing, Large Language Models, Text As Data, Deep larning/Machine Learning, Computational Social Science
+Economic Sociology, Computational Social Science, Natural Language Processing, Large Language Models, Sociology of Culture, Computational Text Analysis
