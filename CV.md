@@ -53,7 +53,7 @@ sections:
       # Peer Reviewed Publications
       - text: "**Peer-Reviewed Articles**"
       - label: 2024
-        text: "Alexandra Dirksen, Sebastian Giessler, **Hendrik Erz**, Martin Johns, Tobias Fiebig (2024). Don’t Patch the Researcher, Patch the Game: A Systematic Approach for Responsible Research via Federated IRBs. *In Proceedings NSPW'14*"
+        text: "Alexandra Dirksen, Sebastian Giessler, **Hendrik Erz**, Martin Johns, Tobias Fiebig (2024). Don’t Patch the Researcher, Patch the Game: A Systematic Approach for Responsible Research via Federated IRBs. *Forthcoming in NSPW'14*"
       - label: 2019
         text:
           - "Hendrik Erz (2019). Der lange Schatten von Gustave Le Bon. Zum sprachlichen Einfluss der Crowd Science auf die Soziologie der Gewalt. Soziologiemagazin 2/2019, 71–88. \\url{https://doi.org/10.3224/soz.v12i2.06}"
@@ -199,6 +199,9 @@ sections:
       - label: 2023
         text:
           - "Summer Instititute in Computational Social Science (SICSS), Norrköping, Sweden (with PI Jacob Habinek)"
+      - label: Since 2022
+        text:
+          - "Website administration; International Network of Analytical Sociologists (INAS)"
       - label: 2022
         text:
           - "IAS PhD Retreat, Norrköping, Sweden"
