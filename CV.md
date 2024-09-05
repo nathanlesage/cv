@@ -50,6 +50,12 @@ sections:
           - "University of Bonn"
   - title: Publications
     items:
+      # Manuscripts in Preparation
+      - text: "**Manuscripts in Preparation**"
+      - text: "Hendrik Erz. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990."
+      - text: "Hendrik Erz. How Important are Floor Speeches for Policymaking? Economic Policymaking in U.S. Congress, 1980–1990."
+      - text: "Hendrik Erz. Markets as Actors. Congressional speech between regulation and market freedom."
+      - text: "Hendrik Erz, Sebastian Giessler. Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software."
       # Peer Reviewed Publications
       - text: "**Peer-Reviewed Articles**"
       - label: 2024
@@ -62,11 +68,6 @@ sections:
       - text: "**Book Chapters**"
       - label: 2018
         text: "Hendrik Erz (2018). Karl Marx und das digitale Zeitalter, in: Klasse, Kapital und Revolution. 200 Jahre Marx. Dietz, Bonn, pp. 145–156."
-      # Manuscripts in Preparation
-      - text: "**Manuscripts in Preparation**"
-      - text: "Erz, Hendrik. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990."
-      - text: "Erz, Hendrik. How Important are Floor Speeches for Policymaking? Economic Policymaking in U.S. Congress, 1980–1990."
-      - text: "Erz, Hendrik. Markets as Actors. Congressional speech between regulation and market freedom."
       # Other Publications
       - text: "**Other Publications**"
       - label: 2023
@@ -158,27 +159,27 @@ sections:
       - label: 2021-2023
         text:
           - "**Logic of Social Inquiry**"
-          - M.Sc.; Teaching Assistant; Linköping University
+          - M.Sc. program; Teaching Assistant; Linköping University
       - label: 2022-2023
         text:
           - "**Digital Strategies for the Social Sciences**"
-          - M.Sc.; Teaching Assistant; Linköping University
+          - M.Sc. program; Teaching Assistant; Linköping University
       - label: 2018-2019
         text:
           - "**Introduction to Political Science**"
-          - B.A.; Teacher; University of Bonn
+          - B.A. program; Teacher; University of Bonn
       - label: 2018
         text:
           - "**Scientific Writing**"
-          - B.A.; Teacher; University of Bonn
+          - B.A. program; Teacher; University of Bonn
       - label: 2018
         text:
         - "**Introduction to Karl Marx' Capital (Reading Course)**"
-        - B.A.; Course Director; University of Bonn
+        - B.A. program; Course Director; University of Bonn
       - label: 2015
         text:
           - "**Tutorial: Methods for Quantitative Sociology**"
-          - B.A.; Teaching Assistant; University of Bonn
+          - B.A. program; Teaching Assistant; University of Bonn
   - title: Service
     items:
       - text: "**Reviewer**"
