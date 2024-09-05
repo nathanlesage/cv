@@ -19,7 +19,6 @@ contact:
   - ""
   - "Bluesky: \\@hendrikerz.bsky.social"
   - "Mastodon: \\@hendrikerz@scholar.social"
-  - "Twitter: \\@sahiralsaid"
 sections:
   - title: Education
     items:
@@ -150,7 +149,7 @@ sections:
       - label: 2020-2024
         text: "Soziologiemagazin, Head of Editorial Board"
       - label: Since 2018
-        text: "Soziologiemagazin"
+        text: "Soziologiemagazin, Editorial Board Member"
       - label: Since 2017
         text: "Zettlr Markdown Editor, Project Maintainer"
   - title: Languages
@@ -159,9 +158,9 @@ sections:
   - title: "Programming Languages & Frameworks"
     items:
       - label: Scientific
-        text: "Python, Stata, matplotlib, numpy, pandas, PyTorch"
+        text: "Python, R, Stata, matplotlib, numpy, pandas, PyTorch"
       - label: Front-End
-        text: "JavaScript/TypeScript, HTML, LESS/SCSS/CSS"
+        text: "JavaScript/TypeScript, HTML, LESS/SCSS/CSS, Vue.js"
       - label: Back-End
         text: "Node.js, PHP, Rust, C/C++"
 ---
