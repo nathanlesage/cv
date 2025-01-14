@@ -58,6 +58,8 @@ sections:
       - text: "Hendrik Erz, Sebastian Giessler. Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software."
       # Peer Reviewed Publications
       - text: "**Peer-Reviewed Articles**"
+      - label: 2025
+        text: "Manika Lamba, **Hendrik Erz** (2025). Thanking the World: Exploring gender-based differences in acknowledgment patterns and support systems in theses. Data and Information Management 100092. \url{https://doi.org/10.1016/j.dim.2024.100092}"
       - label: 2024
         text: "Alexandra Dirksen, Sebastian Giessler, **Hendrik Erz**, Martin Johns, Tobias Fiebig (2024). Don’t Patch the Researcher, Patch the Game: A Systematic Approach for Responsible Research via Federated IRBs. *Forthcoming in NSPW'14*"
       - label: 2019
