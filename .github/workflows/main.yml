@@ -28,9 +28,10 @@ jobs:
         # texlive-xetex = The XeLaTeX compiler
         # texlive-latex-extra = A small set of additional TeX packages
         # texlive-lang-english = Language data for English
+        # texlive-lang-greek = Another package that turned out to be required as of Jan 14, 2025
         # poppler-utils = Required for the automated PDF->PNG conversion later in this workflow.
         run: |
-          sudo apt install pandoc fonts-roboto texlive-base texlive-xetex texlive-latex-extra texlive-lang-english poppler-utils
+          sudo apt install pandoc fonts-roboto texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
       - name: Produce PDF
         run: |
           pandoc --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
