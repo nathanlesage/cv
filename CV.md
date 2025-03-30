@@ -5,7 +5,7 @@
 # generic information. Please have a look into the README.md of this repository
 # for a full explanation!
 name: Hendrik Erz
-occupation: PhD Student
+occupation: PhD Candidate
 address:
   - "Institute for Analytical Sociology (IAS)"
   - "Linköping University"
@@ -14,11 +14,14 @@ address:
   - "Kungsgatan 56, Entrance 56D"
   - "601 74 Norrköping, Sweden"
 contact:
-  - "Email: hendrik.erz\\@liu.se"
-  - "Website: hendrik-erz.de"
-  - ""
-  - "Bluesky: \\@hendrikerz.bsky.social"
-  - "Mastodon: \\@hendrikerz@scholar.social"
+  - "**Email**: [hendrik.erz@liu.se](mailto:hendrik.erz@liu.se)"
+  - "**Website**: [hendrik-erz.de](https://www.hendrik-erz.de/)"
+  - "**ORCID**: [0000-0003-0775-5919](https://orcid.org/0000-0003-0775-5919)"
+  - "\\ "
+  - "**Bluesky**: [@hendrik-erz.de](https://bsky.app/profile/hendrik-erz.de)"
+  - "**Mastodon**: [@hendrikerz@scholar.social](https://scholar.social/@hendrikerz)"
+mainfont: Arial
+sansfont: Arial
 sections:
   - title: Education
     items:
@@ -35,7 +38,8 @@ sections:
     items:
       - label: 2021
         text:
-          - "Science of Science Summer School (S4), Syracuse University, New York, United States"
+          - "Science of Science Summer School (S4)"
+          - "Syracuse University, New York, United States"
   - title: Employment
     items:
       - label: 2019-20
@@ -52,24 +56,23 @@ sections:
     items:
       # Manuscripts in Preparation
       - text: "**Manuscripts in Preparation**"
-      - text: "Hendrik Erz. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990."
-      - text: "Hendrik Erz. How Important are Floor Speeches for Policymaking? Economic Policymaking in U.S. Congress, 1980–1990."
-      - text: "Hendrik Erz. Markets as Actors. Congressional speech between regulation and market freedom."
-      - text: "Hendrik Erz, Sebastian Giessler. Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software."
+      - text: "**Hendrik Erz**. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990."
+      - text: "**Hendrik Erz**. Vote Defection and Party Power in U.S. Congress: Modelling a Century of Speech and Vote Behavior, 1873-1989."
+      - text: "**Hendrik Erz**. Measuring Issue-Level Polarization in U.S. Congressional Discourse Using Topic Models and Community Detection. *Currently under review*"
+      - text: "**Hendrik Erz**, Sebastian Giessler. Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software."
       # Peer Reviewed Publications
       - text: "**Peer-Reviewed Articles**"
       - label: 2025
         text: "Manika Lamba, **Hendrik Erz** (2025). Thanking the World: Exploring gender-based differences in acknowledgment patterns and support systems in theses. Data and Information Management 100092. \\url{https://doi.org/10.1016/j.dim.2024.100092}"
-      - label: 2024
-        text: "Alexandra Dirksen, Sebastian Giessler, **Hendrik Erz**, Martin Johns, Tobias Fiebig (2024). Don’t Patch the Researcher, Patch the Game: A Systematic Approach for Responsible Research via Federated IRBs. *Forthcoming in NSPW'14*"
+      - text: "Alexandra Dirksen, Sebastian Giessler, **Hendrik Erz**, Martin Johns, Tobias Fiebig (2025). Don’t Patch the Researcher, Patch the Game: A Systematic Approach for Responsible Research via Federated Ethics Boards. *Proceedings of the New Security Paradigms Workshop*, 126–141. New York, NY, USA: Association for Computing Machinery. \\url{https://doi.org/10.1145/3703465.3703475}"
       - label: 2019
         text:
-          - "Hendrik Erz (2019). Der lange Schatten von Gustave Le Bon. Zum sprachlichen Einfluss der Crowd Science auf die Soziologie der Gewalt. Soziologiemagazin 2/2019, 71–88. \\url{https://doi.org/10.3224/soz.v12i2.06}"
+          - "**Hendrik Erz** (2019). Der lange Schatten von Gustave Le Bon. Zum sprachlichen Einfluss der Crowd Science auf die Soziologie der Gewalt. Soziologiemagazin 2/2019, 71–88. \\url{https://doi.org/10.3224/soz.v12i2.06}"
           - "(*\"The long shadow of Gustave Le Bon. On the linguistic influence of Crowd Science on the Sociology of Violence.\"*)"
       # Book chapters
       - text: "**Book Chapters**"
       - label: 2018
-        text: "Hendrik Erz (2018). Karl Marx und das digitale Zeitalter, in: Klasse, Kapital und Revolution. 200 Jahre Marx. Dietz, Bonn, pp. 145–156."
+        text: "**Hendrik Erz** (2018). Karl Marx und das digitale Zeitalter, in: Klasse, Kapital und Revolution. 200 Jahre Marx. Dietz, Bonn, pp. 145–156."
       # Other Publications
       - text: "**Other Publications**"
       - label: 2023
@@ -78,22 +81,23 @@ sections:
           - "(*\"Text as Data. Variable Extraction via LSTM Networks\"*)"
       - label: 2020
         text:
-          - "Hendrik Erz (2020). Künstliche Intelligenz und Daten: Eine Evaluation softwarebasierter militärischer Informationsgewinnung (Research Report No. 4). IFSH, Hamburg. \\url{https://ifsh.de/file/publication/Research_Report/004/20200701_Research_Report_004.pdf} (accessed 07.01.21)"
+          - "**Hendrik Erz** (2020). Künstliche Intelligenz und Daten: Eine Evaluation softwarebasierter militärischer Informationsgewinnung (Research Report No. 4). IFSH, Hamburg. \\url{https://ifsh.de/file/publication/Research_Report/004/20200701_Research_Report_004.pdf} (accessed 07.01.21)"
           - "(*\"Artificial Intelligence and data: An evaluation of software-based military intelligence.\"*)"
-      - label: 2020
-        text: "Operative Porträts: eine Bildgeschichte der Identifizierbarkeit von Lavater bis Facebook. Von Roland Meyer. Soziologiemagazin 2020, 75–81. \\url{https://doi.org/10.3224/soz.v13i1.07}"
-      - label: 2020
-        text: "The Status Quo is a Dystopian Nightmare. engagée 9, 20–25."
+      - text: "**Hendrik Erz** (2020). Operative Porträts: eine Bildgeschichte der Identifizierbarkeit von Lavater bis Facebook. Von Roland Meyer. Review. Soziologiemagazin 2020, 75–81. \\url{https://doi.org/10.3224/soz.v13i1.07}"
+      - text: "**Hendrik Erz** (2020). The Status Quo is a Dystopian Nightmare. engagée 9, 20–25."
       - label: 2019
-        text: "Rezension zu Neoliberalismus — Wie alles anfing: Das Walter Lippmann Kolloquium, verfasst von Hendrik Erz (Review). Soziologieblog. \\url{https://soziologieblog.hypotheses.org/12990} (accessed 10.23.19)."
-      - label: 2019
-        text: "Schulz, A., Erz, H., Riedl, V. How to make a Soziologiemagazin. Soziologiemagazin 1/2019. \\url{https://elibrary.utb.de/doi/pdf/10.3224/soz.v12i2.08} (accessed 07.01.21)"
+        text: "**Hendrik Erz** (2019). Neoliberalismus — Wie alles anfing: Das Walter Lippmann Kolloquium. Review. Soziologieblog. \\url{https://soziologieblog.hypotheses.org/12990} (accessed 10.23.19)."
+      - text: "Andreas Schulz, **Hendrik Erz**, Veronika Riedl (2019). How to make a Soziologiemagazin. Soziologiemagazin 1/2019. \\url{https://elibrary.utb.de/doi/pdf/10.3224/soz.v12i2.08} (accessed 07.01.21)"
       - label: 2017
-        text: "Zygmunt Bauman: Die Angst vor den anderen (Review). Widerspruch 70/2017, 164–168."
+        text: "**Hendrik Erz** (2017). Zygmunt Bauman: Die Angst vor den anderen. Review. Widerspruch 70/2017, 164–168."
   - title: Invited Talks
     items:
     - label: 2024
       text:
+        - "**Economic Policymaking in U.S. Congress**"
+        - "Institute for Social Science, Department for Computational Social Science"
+        - "University of Stuttgart, Germany"
+    - text:
         - "**Economic Policymaking in U.S. Congress**"
         - "IAS Annual Spring Retreat, Kolmården, Sweden"
     - label: 2023
@@ -111,6 +115,11 @@ sections:
     - label: 
   - title: Conference and Workshop Presentations
     items:
+      - label: 2025
+        text:
+          - "**Vote Defection and Party Power in U.S. Congress**"
+          - "Join Spring Conference of the methods sections of DGS and AS"
+          - "University of Leipzig, Germany"
       - label: 2024
         text:
           - "**Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software**"
@@ -154,6 +163,10 @@ sections:
           - "Master Thesis Presentation, Studentischer Soziologiekongress, TU Chemnitz, Germany."
   - title: Teaching
     items:
+      - label: 2022-2024
+        text:
+          - "**Digital Strategies for the Social Sciences**"
+          - M.Sc. program; Teaching Assistant; Linköping University
       - label: 2023
         text:
           - "**Summer Institute for Computational Social Sciences (SICSS)**"
@@ -161,10 +174,6 @@ sections:
       - label: 2021-2023
         text:
           - "**Logic of Social Inquiry**"
-          - M.Sc. program; Teaching Assistant; Linköping University
-      - label: 2022-2023
-        text:
-          - "**Digital Strategies for the Social Sciences**"
           - M.Sc. program; Teaching Assistant; Linköping University
       - label: 2018-2019
         text:
@@ -185,7 +194,7 @@ sections:
   - title: Service
     items:
       - text: "**Reviewer**"
-      - label: 2018-2020
+      - label: Since 2018
         text:
           - "Soziologiemagazin"
       - text: "**Editorial Board Member**"
@@ -193,31 +202,38 @@ sections:
         text:
           - "Head of Editorial Board, Soziologiemagazin"
       - text: "**Organization and Organizational Assistance**"
-      - label: 2024
-        text:
-          - "Session Pretrained models and sociology: ethical, methodological, and theoretical considerations (at NSA 2024)"
-      - label: 2023-2024
+      - label: Since 2023
         text:
           - "Swedish Interdisciplinary Research School in Computational Social Science (SIRCSS), Norrköping, Sweden (with PI Jacob Habinek)"
-      - label: 2023
-        text:
-          - "Summer Instititute in Computational Social Science (SICSS), Norrköping, Sweden (with PI Jacob Habinek)"
       - label: Since 2022
         text:
           - "Website administration; International Network of Analytical Sociologists (INAS)"
+      - label: 2025
+        text:
+          - "Chair for the International Conference on Computational Social Science (IC2S2), Norrköping"
+      - label: 2025
+        text:
+          - "Summer Instititute in Computational Social Science (SICSS), Norrköping, Sweden (with PI Jacob Habinek)"
+      - label: 2024
+        text:
+          - "Session Pretrained models and sociology: ethical, methodological, and theoretical considerations (at NSA 2024)"
+      - label: 2023
+        text:
+          - "Summer Instititute in Computational Social Science (SICSS), Norrköping, Sweden (with PI Jacob Habinek)"
       - label: 2022
         text:
           - "IAS PhD Retreat, Norrköping, Sweden"
       - label: 2021-2022
         text: "IAS Salon (Institute Reading Group)"
+      - label: 2021-2022
+        text:
+          - "PhD Representative, Institute for Analytical Sociology"
       - label: 2016
         text:
           - "Student Research Symposium, University of Bonn, Germany"
-      - text: "**PhD Representative**"
-      - label: 2021-2022
-        text: "Institute for Analytical Sociology"
   - title: Supervision
     items:
+      - text: "Co-Supervisor, M.Sc. thesis in CSS, Sophia Grill (2024)"
       - text: "Co-Supervisor, M.Sc. thesis in CSS, Yiqiu Wang (2023)"
       - text: "Co-Supervisor, M.Sc. thesis in CSS, Lijun Peng (2022)"
   - title: Memberships
@@ -225,15 +241,17 @@ sections:
       - text:
           - "American Sociological Association (ASA);"
           - "International Network of Analytical Sociologists (INAS)"
-  - title: Open Source
+  - title: Academic Software
     items:
       - label: Since 2017
-        text: "Zettlr Markdown Editor, Project Maintainer"
+        text: "Zettlr (Project Maintainer)"
+      - label: Since 2024
+        text: "Pandoc (Contributor)"
   - title: Languages
     items:
       - text:
           - "German (native), English (fluent, C1),"
-          - "Swedish (Moderate, A2), French (Moderate, A2)"
+          - "Swedish (Moderate, B1), French (Moderate, A2)"
   - title: "Programming Languages & Frameworks"
     items:
       - label: Scientific
@@ -246,4 +264,6 @@ sections:
 
 # Research Interests
 
-Economic Sociology, Computational Social Science, Natural Language Processing, Large Language Models, Sociology of Culture, Computational Text Analysis
+Political Sociology, Computational Social Science, Natural Language Processing,
+Computational Text Analysis, Sociology of Culture, Science of Science, Ethics of
+AI
