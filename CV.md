@@ -20,8 +20,8 @@ contact:
   - "\\ "
   - "**Bluesky**: [@hendrik-erz.de](https://bsky.app/profile/hendrik-erz.de)"
   - "**Mastodon**: [@hendrikerz@scholar.social](https://scholar.social/@hendrikerz)"
-mainfont: Arial
-sansfont: Arial
+mainfont: Liberation Sans
+sansfont: Liberation Sans
 sections:
   - title: Education
     items:

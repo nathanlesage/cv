@@ -23,7 +23,7 @@ jobs:
           ref: master
       - name: Install Dependencies
         # Pandoc = self-explanatory
-        # fonts-roboto = The main font I use
+        # fonts-liberation = The main font I use
         # texlive-base = The LaTeX base package
         # texlive-xetex = The XeLaTeX compiler
         # texlive-latex-extra = A small set of additional TeX packages
@@ -32,7 +32,7 @@ jobs:
         # poppler-utils = Required for the automated PDF->PNG conversion later in this workflow.
         run: |
           sudo apt update
-          sudo apt install pandoc fonts-roboto texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
+          sudo apt install pandoc fonts-liberation texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
       - name: Produce PDF
         run: |
           pandoc --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
