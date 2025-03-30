@@ -4,6 +4,17 @@
 % We're using the KOMA Article class
 \documentclass[11pt,a4paper]{scrartcl}
 
+% Margin options (should be defined as soon as possible so that other packages
+% have access to the calculations and can calculate their own widths
+% accordingly.)
+\usepackage[
+  left=2cm,
+  right=2cm,
+  top=2cm,
+  bottom=3cm,
+  nomarginpar
+]{geometry}
+
 % Some packages useful for the font handling
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}
@@ -15,6 +26,14 @@
 
 % The xcolor package provides some color functionality
 \usepackage{xcolor}
+
+% Additional packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Define default colors
 \definecolor{AccentColor}{rgb}{0.5,0.0,0.4}
@@ -33,11 +52,7 @@ $endif$
 \sectionfont{\color{TextColor}}
 \subsectionfont{\color{TextColor}}
 
-% Document fonts
-\setmainfont{Roboto}
-\setsansfont{Roboto}
-
-% Again, allow user-overridable fonts
+% Document fonts. Uses TeX default, unless the user overrides it.
 $if(mainfont)$
 \setmainfont{$mainfont$}
 $endif$
@@ -60,8 +75,10 @@ $endif$
 % For better page headers and footers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{} % No page header
-\cfoot{\color{TextColor}\thepage} % Centered page number
+\fancyhead{} % No page header
+\fancyfoot[L]{\small\color{TextColor}$if(name)$$name$$endif$} % Left Author
+\fancyfoot[C]{\small\color{TextColor}\thepage} % Centered page number
+\fancyfoot[R]{\small\color{TextColor}Last updated: \today} % Right last updated
 % Prevent the rulers from showing up
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -73,21 +90,6 @@ $endif$
 % This command makes URLs look like the rest of the text
 \urlstyle{same}
 
-% Packages
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
-
-% Margin options
-\usepackage[
-  left=3cm,
-  right=3cm,
-  top=2cm,
-  bottom=3cm
-]{geometry}
-
-
 % The package enumitem is the central package for the CV sections.
 % It is used to display a label in our accent color and also aligns
 % the text properly.
@@ -96,7 +98,14 @@ $endif$
 % be the opposite of itemindent, since otherwise all lines except the
 % first one of an item's "text" will be wrongly indented.
 \usepackage{enumitem}
-\setlist[description]{labelwidth=2cm,itemindent=-1cm,labelsep=1cm,align=right,left=2cm,font=\color{AccentColor}}
+\setlist[description]{
+  labelwidth=2cm,
+  itemindent=-1cm,
+  labelsep=1cm,
+  align=right,
+  left=2cm,
+  font=\color{AccentColor}
+}
 
 % Remove all heading numberings (even from the custom body-text)
 \makeatletter
@@ -107,7 +116,9 @@ $endif$
 \author{$if(name)$$name$$endif$}
 \title{$if(name)$$name$$endif$ - CV}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+
 % Immediately switch to text color
 \color{TextColor}
 
@@ -121,20 +132,20 @@ $endif$
 \begin{minipage}[t]{0.48\textwidth}
 $if(occupation)$
 \textbf{$occupation$} \\
+\\
 $endif$
 % Print the address line(s)
 $for(address)$$address$ $sep$ \\$endfor$
 \end{minipage}%
 \begin{minipage}[t]{0.48\textwidth}
-\begin{flushright}
-% Print contact info if there is some. Everything is treated as an URL.
+%\begin{flushright}
+% Print contact info if there is some.
 $if(contact)$
   \textbf{Contact} \\
-    $for(contact)$
-    \url{$contact$}$sep$ \\
-    $endfor$
+    \\
+    $for(contact)$$contact$ $sep$ \\$endfor$
 $endif$
-\end{flushright}
+%\end{flushright}
 \end{minipage}
 
 % Here comes the custom body text (the text from the Markdown document)
