@@ -31,6 +31,7 @@ jobs:
         # texlive-lang-greek = Another package that turned out to be required as of Jan 14, 2025
         # poppler-utils = Required for the automated PDF->PNG conversion later in this workflow.
         run: |
+          sudo apt update
           sudo apt install pandoc fonts-roboto texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
       - name: Produce PDF
         run: |
