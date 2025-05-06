@@ -194,6 +194,9 @@ sections:
   - title: Service
     items:
       - text: "**Reviewer**"
+      - label: Since 2025
+        text:
+          - "Network Science"
       - label: Since 2018
         text:
           - "Soziologiemagazin"
