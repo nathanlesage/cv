@@ -118,7 +118,7 @@ sections:
       - label: 2025
         text:
           - "**Vote Defection and Party Power in U.S. Congress**"
-          - "Join Spring Conference of the methods sections of DGS and AS"
+          - "Joint Spring Conference of the methods sections of DGS and AS"
           - "University of Leipzig, Germany"
       - label: 2024
         text:
