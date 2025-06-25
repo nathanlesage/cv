@@ -28,7 +28,8 @@ sections:
       - label: Since 2020
         text:
           - "**PhD in Analytical Sociology, Linköping University**"
-          - "Supervisors: Jacob Habinek, Étienne Ollion"
+          - "Working Title: **Policymaking in U.S. Congress: Evidence from a Century of Speech and Vote Behavior**"
+          - "Supervisors: Jacob Habinek (IAS, Linköping University), Étienne Ollion (CNRS, Paris)"
           - "(expected: 2025)"
       - label: 2017
         text: M.A. in Sociology, University of Bonn
@@ -42,6 +43,11 @@ sections:
           - "Syracuse University, New York, United States"
   - title: Employment
     items:
+      - label: 2020-25
+        text:
+          - "**Researcher in Analytical Sociology**"
+          - "Institute for Analytical Sociology (IAS)"
+          - "Linköping University"
       - label: 2019-20
         text:
           - "**Researcher in Machine Learning / Artificial Intelligence**"
