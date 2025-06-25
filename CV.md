@@ -43,7 +43,7 @@ sections:
           - "Syracuse University, New York, United States"
   - title: Employment
     items:
-      - label: 2020-25
+      - label: Since 2020
         text:
           - "**Researcher in Analytical Sociology**"
           - "Institute for Analytical Sociology (IAS)"
@@ -61,7 +61,7 @@ sections:
   - title: Publications
     items:
       # Manuscripts in Preparation
-      - text: "**Manuscripts in Preparation**"
+      - text: "**Manuscripts in Preparation** (available upon request)"
       - text: "**Hendrik Erz**. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990."
       - text: "**Hendrik Erz**. Vote Defection and Party Power in U.S. Congress: Modelling a Century of Speech and Vote Behavior, 1873-1989."
       - text: "**Hendrik Erz**. Measuring Issue-Level Polarization in U.S. Congressional Discourse Using Topic Models and Community Detection. *Currently under review*"
