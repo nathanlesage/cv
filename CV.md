@@ -29,7 +29,7 @@ sections:
         text:
           - "**PhD in Analytical Sociology, Linköping University** (expected: 2025)"
           - ""
-          - "Working Title: **Policymaking in U.S. Congress: Evidence from a Century of Speech and Vote Behavior**"
+          - "**Policymaking in U.S. Congress: Evidence from a Century of Speech and Vote Behavior** (Working Title)"
           - "Supervisors: Jacob Habinek (IAS, Linköping), Étienne Ollion (CNRS, Paris)"
       - label: 2017
         text: M.A. in Sociology, University of Bonn
