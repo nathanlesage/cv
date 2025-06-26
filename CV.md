@@ -169,14 +169,19 @@ sections:
           - "Master Thesis Presentation, Studentischer Soziologiekongress, TU Chemnitz, Germany."
   - title: Teaching
     items:
+      - label: 2025
+        text:
+          - "**Summer Institute in Computational Social Science (SICSS)**"
+          - Lecture and workshop in ethics for CSS
+          - Lecture and workshop in Computational Text Analysis
       - label: 2022-2024
         text:
           - "**Digital Strategies for the Social Sciences**"
           - M.Sc. program; Teaching Assistant; Linköping University
       - label: 2023
         text:
-          - "**Summer Institute for Computational Social Sciences (SICSS)**"
-          - Lecture and workshop on Computational Text Analysis
+          - "**Summer Institute in Computational Social Science (SICSS)**"
+          - Lecture and workshop in Computational Text Analysis
       - label: 2021-2023
         text:
           - "**Logic of Social Inquiry**"
@@ -273,6 +278,7 @@ sections:
 
 # Research Interests
 
-Political Sociology, Computational Social Science, Natural Language Processing,
-Computational Text Analysis, Sociology of Culture, Science of Science, Ethics of
-AI
+Political Sociology, Computational Social Science, Analytical Sociology,
+Computational Text Analysis/NLP,
+Legislative Debates, Policymaking, U.S. Congress,
+Science of Science, Ethics of AI
