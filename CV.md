@@ -27,10 +27,10 @@ sections:
     items:
       - label: Since 2020
         text:
-          - "**PhD in Analytical Sociology, Linköping University**"
+          - "**PhD in Analytical Sociology, Linköping University** (expected: 2025)"
+          - ""
           - "Working Title: **Policymaking in U.S. Congress: Evidence from a Century of Speech and Vote Behavior**"
-          - "Supervisors: Jacob Habinek (IAS, Linköping University), Étienne Ollion (CNRS, Paris)"
-          - "(expected: 2025)"
+          - "Supervisors: Jacob Habinek (IAS, Linköping), Étienne Ollion (CNRS, Paris)"
       - label: 2017
         text: M.A. in Sociology, University of Bonn
       - label: 2014
