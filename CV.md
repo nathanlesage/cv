@@ -98,6 +98,10 @@ sections:
         text: "**Hendrik Erz** (2017). Zygmunt Bauman: Die Angst vor den anderen. Review. Widerspruch 70/2017, 164–168."
   - title: Invited Talks
     items:
+    - label: 2025
+      text:
+        - "**Vote Defection and Party Pressure in U.S. Congress: Evidence from a Century of Vote and Speech Behavior**"
+        - "IAS Annual Spring Retreat, Kolmården, Sweden"
     - label: 2024
       text:
         - "**Economic Policymaking in U.S. Congress**"
