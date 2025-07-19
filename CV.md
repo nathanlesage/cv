@@ -228,7 +228,7 @@ sections:
           - "Website administration; International Network of Analytical Sociologists (INAS)"
       - label: 2025
         text:
-          - "Chair for the International Conference on Computational Social Science (IC2S2), Norrköping"
+          - "Program Chair, International Conference on Computational Social Science (IC2S2), Norrköping"
       - label: 2025
         text:
           - "Summer Instititute in Computational Social Science (SICSS), Norrköping, Sweden (with PI Jacob Habinek)"
