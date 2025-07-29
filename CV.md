@@ -259,6 +259,13 @@ sections:
       - text:
           - "American Sociological Association (ASA);"
           - "International Network of Analytical Sociologists (INAS)"
+  - title: Referees
+    items:
+      - text:
+        - "Prof. Dr. Marc Keuschnigg (<marc.keuschnigg@uni-leipzig.de>)"
+        - "Prof. Dr. Jacob Habinek (<jacob.habinek@liu.se>)"
+        - "Prof. Dr. Étienne Ollion (<etienne.ollion@polytechnique.edu>)"
+        - "Prof. Dr. Peter Hedström (<peter.hedstrom@liu.se>)"
   - title: Academic Software
     items:
       - label: Since 2017
