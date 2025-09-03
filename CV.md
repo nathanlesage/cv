@@ -29,7 +29,7 @@ sections:
         text:
           - "**PhD in Analytical Sociology, Linköping University** (expected: 2025)"
           - ""
-          - "**Policymaking in U.S. Congress: Evidence from a Century of Speech and Vote Behavior** (Working Title)"
+          - "**On the Record: Understanding A Century of Congressional Lawmaking Through Speech and Vote Behavior**"
           - "Supervisors: Jacob Habinek (IAS, Linköping), Étienne Ollion (CNRS, Paris)"
       - label: 2017
         text: M.A. in Sociology, University of Bonn
@@ -62,9 +62,9 @@ sections:
     items:
       # Manuscripts in Preparation
       - text: "**Manuscripts in Preparation** (available upon request)"
-      - text: "**Hendrik Erz**. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990."
-      - text: "**Hendrik Erz**. Vote Defection and Party Power in U.S. Congress: Modelling a Century of Speech and Vote Behavior, 1873-1989."
-      - text: "**Hendrik Erz**. Measuring Issue-Level Polarization in U.S. Congressional Discourse Using Topic Models and Community Detection. *Currently under review*"
+      - text: "**Hendrik Erz**. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990. (Preprint available at SocArXiv: \\url{https://doi.org/10.31235/osf.io/fxrzk_v1})"
+      - text: "**Hendrik Erz**. Brittle Parties? Dissent, Defection, and Party Power in U.S. Congress."
+      - text: "**Hendrik Erz**. Think alike, talk alike? Measuring Issue-Level Polarization in Congressional Speech Using Community Detection-Algorithms."
       - text: "**Hendrik Erz**, Sebastian Giessler. Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software."
       # Peer Reviewed Publications
       - text: "**Peer-Reviewed Articles**"
