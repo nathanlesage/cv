@@ -280,11 +280,11 @@ sections:
   - title: "Programming Languages & Frameworks"
     items:
       - label: Scientific
-        text: "Python, R, Stata, matplotlib, numpy, pandas, PyTorch"
-      - label: Front-End
-        text: "JavaScript/TypeScript, HTML, LESS/SCSS/CSS, Vue.js"
-      - label: Back-End
-        text: "Node.js, PHP, Rust, C/C++"
+        text: "Python, R, Stata, matplotlib, numpy, pandas, PyTorch, Slurm (HPC)"
+      - label: Frontend
+        text: "JavaScript/TypeScript, HTML/CSS, Vue.js"
+      - label: Backend
+        text: "Node.js, PHP, Rust, C/C++, Bash/ZSH"
 ---
 
 # Research Interests
