@@ -75,8 +75,10 @@ sections:
         text:
           - "**Hendrik Erz** (2019). Der lange Schatten von Gustave Le Bon. Zum sprachlichen Einfluss der Crowd Science auf die Soziologie der Gewalt. Soziologiemagazin 2/2019, 71–88. \\url{https://doi.org/10.3224/soz.v12i2.06}"
           - "(*\"The long shadow of Gustave Le Bon. On the linguistic influence of Crowd Science on the Sociology of Violence.\"*)"
-      # Book chapters
-      - text: "**Book Chapters**"
+      # Books and Book chapters
+      - text: "**Books and Book Chapters**"
+      - label: 2025
+        text: "**Hendrik Erz** (2025). On the Record: Understanding a Century of Congressional Lawmaking through Speech and Vote Behavior. Linköping University Press. \\url{https://doi.org/10.3384/9789181182828}"
       - label: 2018
         text: "**Hendrik Erz** (2018). Karl Marx und das digitale Zeitalter, in: Klasse, Kapital und Revolution. 200 Jahre Marx. Dietz, Bonn, pp. 145–156."
       # Other Publications
