@@ -1,0 +1,46 @@
+<!-- NOTE: Stub-template, because I (personally) don't need a full HTML file. -->
+<h1>$if(name)$$name$$else$Please provide a name!$endif$</h1>
+$if(occupation)$
+<p id="occupation">$occupation$</p>
+$endif$
+
+<dl id="metadata">
+  <dt>Address</dt>
+  <dd>
+    <!-- Address line(s) -->
+    <div id="address">
+      $for(address)$
+      $address$$sep$<br>
+      $endfor$
+    </div>
+  </dd>
+
+  $if(contact)$
+  <dt>Contact</dt>
+  <dd>
+    <div id="contact">
+      $for(contact)$
+      $contact$$sep$<br>
+      $endfor$
+    </div>
+  </dd>
+  $endif$
+</dl>
+
+<!-- Next comes the main body (if there was some) -->
+$body$
+
+<!-- Now come the sections -->
+$for(sections)$
+<h1 class="section-heading">$sections.title$</h1>
+<dl id="$sections.title$" class="section">
+  $for(sections.items)$
+  <dt>$if(sections.items.label)$$sections.items.label$$endif$</dt>
+  <dd>
+    $for(sections.items.text)$
+    $sections.items.text$$sep$<br>
+    $endfor$ 
+  </dd>
+  $endfor$
+</dl>
+$endfor$

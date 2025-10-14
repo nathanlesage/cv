@@ -36,6 +36,7 @@ jobs:
       - name: Produce PDF
         run: |
           pandoc --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
+          pandoc --output=CV.stub.html --template=cv.template.htm CV.md
       - name: Update Preview PNG
         # See https://askubuntu.com/a/50180
         run: |

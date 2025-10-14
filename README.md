@@ -32,6 +32,9 @@ The first step is to either fork this repository, or to download it to your comp
 
 You need to download only two files: The `CV.md` which contains the data, and the `cv.template.tex` file that contains the template.
 
+> [!TIP]
+> The repository also contains the necessary files for rendering the CV data into an HTML template. If you want to, e.g., also display an HTML version of your CV on your website, also make sure to download the `cv.template.htm` file that contains the HTML stub template. If you want the HTML export, too, simply run `pandoc --output=CV.html --template=cv.template.htm CV.md` to generate the HTML version.
+
 ### Step 2: Adding Your Data
 
 After downloading the files, you'll want to edit the file `CV.md`. It includes my data which should give you a preview of what you can do. Change this data to include yours instead of mine. I have attempted to keep its structure as simple as possible. There are two types of data that you can use:
