@@ -5,7 +5,7 @@
 # generic information. Please have a look into the README.md of this repository
 # for a full explanation!
 name: Hendrik Erz, PhD
-occupation: Postdoktor
+occupation: "" # Postdoktor
 address:
   - "Institute for Analytical Sociology (IAS)"
   - "Linköping University"
