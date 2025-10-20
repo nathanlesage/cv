@@ -4,8 +4,8 @@
 # This template can be used to create a simple but good-looking CV based on very
 # generic information. Please have a look into the README.md of this repository
 # for a full explanation!
-name: Hendrik Erz
-occupation: PhD Candidate
+name: Hendrik Erz, PhD
+occupation: Postdoktor
 address:
   - "Institute for Analytical Sociology (IAS)"
   - "Linköping University"
@@ -25,9 +25,9 @@ sansfont: Liberation Sans
 sections:
   - title: Education
     items:
-      - label: Since 2020
+      - label: 2025
         text:
-          - "**PhD in Analytical Sociology, Linköping University** (Defense: Oct 20, 2025)"
+          - "**PhD in Analytical Sociology, Linköping University**"
           - ""
           - "**On the Record: Understanding A Century of Congressional Lawmaking Through Speech and Vote Behavior**"
           - "Supervisors: Jacob Habinek (IAS, Linköping), Étienne Ollion (CNRS, Paris)"
