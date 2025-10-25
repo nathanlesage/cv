@@ -21,9 +21,11 @@ contact:
   scholar: L8y-sWQAAAAJ
   website: https://www.hendrik-erz.de/
   website_title: hendrik-erz.de
-  bluesky: "hendrik-erz.de" # Without @!
-  mastodon: "https://scholar.social/@hendrikerz"
-  mastodon_title: "@hendrikerz@scholar.social"
+  bluesky: "hendrik-erz.de" # Without @, will be automatically added.
+  # NOTE: Pandoc will convert an URL with "@"-characters to citations; and their workaround does not work. So manually escape it here.
+  # BUG: https://github.com/jgm/pandoc/issues/10570
+  mastodon: "https://scholar.social/%40hendrikerz"
+  mastodon_title: "&#0064;hendrikerz&#0064;scholar.social"
 #mainfont: Liberation Sans
 #sansfont: Liberation Sans
 sections:
