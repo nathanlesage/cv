@@ -11,7 +11,6 @@ occupation: "Postdoc"
 address:
   - "Institute for Analytical Sociology (IAS)"
   - "Linköping University"
-  - ""
   - "Kopparhammaren 7"
   - "Kungsgatan 56, Entrance 56D"
   - "601 74 Norrköping, Sweden"
@@ -24,8 +23,8 @@ contact:
   bluesky: "hendrik-erz.de" # Without @, will be automatically added.
   # NOTE: Pandoc will convert an URL with "@"-characters to citations; and their workaround does not work. So manually escape it here.
   # BUG: https://github.com/jgm/pandoc/issues/10570
-  mastodon: "https://scholar.social/%40hendrikerz"
-  mastodon_title: "&#0064;hendrikerz&#0064;scholar.social"
+  #mastodon: "https://scholar.social/%40hendrikerz"
+  #mastodon_title: "&#0064;hendrikerz&#0064;scholar.social"
 #mainfont: Liberation Sans
 #sansfont: Liberation Sans
 sections:
@@ -49,9 +48,14 @@ sections:
           - "Syracuse University, New York, United States"
   - title: Employment
     items:
-      - label: Since 2020
+      - label: Since 2025
         text:
           - "**Researcher in Analytical Sociology**"
+          - "Institute for Analytical Sociology (IAS)"
+          - "Linköping University" 
+      - label: 2020-25
+        text:
+          - "**PhD Student in Analytical Sociology**"
           - "Institute for Analytical Sociology (IAS)"
           - "Linköping University"
       - label: 2019-20
