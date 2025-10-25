@@ -34,6 +34,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install pandoc fonts-liberation texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
+          sudo tlmgr init-usertree
           sudo tlmgr install fontawesome6
       - name: Produce PDF
         run: |
