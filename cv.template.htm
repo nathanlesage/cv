@@ -22,7 +22,7 @@ $endif$
       $if(contact.email)$
       <tr>
         <th>
-          <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/regular/envelope.svg" alt="Mail" style="height: 1em;">
+          <img class="inline-svg" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/regular/envelope.svg" alt="Mail" style="height: 1em; color: currentColor;">
         </th>
         <td>
           <a href="mailto:$contact.email$">$contact.email$</a>
@@ -32,7 +32,7 @@ $endif$
       $if(contact.phone)$
       <tr>
         <th>
-          <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/regular/phone.svg" alt="Telephone" style="height: 1em;">
+          <img class="inline-svg" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/regular/phone.svg" alt="Telephone" style="height: 1em; color: currentColor;">
         </th>
         <td>
           <a href="tel:$contact.phone$">$contact.phone$</a>
@@ -42,7 +42,7 @@ $endif$
       $if(contact.orcid)$
       <tr>
         <th>
-          <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/brands/orcid.svg" alt="ORCID" style="height: 1em;">
+          <img class="inline-svg" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/brands/orcid.svg" alt="ORCID" style="height: 1em; color: currentColor;">
         </th>
         <td>
           <a href="https://orcid.org/$contact.orcid$">$contact.orcid$</a>
@@ -52,7 +52,7 @@ $endif$
       $if(contact.scholar)$
       <tr>
         <th>
-          <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/brands/google-scholar.svg" alt="Google Scholar" style="height: 1em;">
+          <img class="inline-svg" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/brands/google-scholar.svg" alt="Google Scholar" style="height: 1em; color: currentColor;">
         </th>
         <td>
           <a href="https://scholar.google.com/citations?user=$contact.scholar$">Scholar</a>
@@ -62,7 +62,7 @@ $endif$
       $if(contact.website)$
       <tr>
         <th>
-          <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/solid/globe.svg" alt="Website" style="height: 1em;">
+          <img class="inline-svg" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/solid/globe.svg" alt="Website" style="height: 1em; color: currentColor;">
         </th>
         <td>
           <a href="$contact.website$">$if(contact.website_title)$$contact.website_title$$else$$contact.website$$endif$</a>
@@ -72,7 +72,7 @@ $endif$
       $if(contact.bluesky)$
       <tr>
         <th>
-          <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/brands/bluesky.svg" alt="Bluesky" style="height: 1em;">
+          <img class="inline-svg" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/brands/bluesky.svg" alt="Bluesky" style="height: 1em; color: currentColor;">
         </th>
         <td>
           <a href="https://bsky.app/profile/@$contact.bluesky$">@$contact.bluesky$</a>
@@ -82,7 +82,7 @@ $endif$
       $if(contact.twitter)$
       <tr>
         <th>
-          <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/brands/twitter.svg" alt="Twitter" style="height: 1em;">
+          <img class="inline-svg" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/brands/twitter.svg" alt="Twitter" style="height: 1em; color: currentColor;">
         </th>
         <td>
           <a href="https://www.twitter.com/$contact.twitter$">@$contact.twitter$</a>
@@ -92,7 +92,7 @@ $endif$
       $if(contact.mastodon)$
       <tr>
         <th>
-          <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/brands/mastodon.svg" alt="Mastodon" style="height: 1em;">
+          <img class="inline-svg" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/7.x/svgs-full/brands/mastodon.svg" alt="Mastodon" style="height: 1em; color: currentColor;">
         </th>
         <td>
           <a href="$contact.mastodon$">$if(contact.mastodon_title)$$contact.mastodon_title$$else$$contact.mastodon$$endif$</a>
