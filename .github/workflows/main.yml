@@ -22,16 +22,21 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: master
+      - name: Run APT
+        run: |
+          sudo apt update && sudo apt upgrade
+          sudo apt install pandoc fonts-liberation poppler-utils
       - name: Install LaTeX
         # see https://tug.org/texlive/quickinstall.html
         # For `install-tl`, see https://tug.org/texlive/doc/install-tl.html
+        # NOTE: Overwriting texlive dir so that it remains stable.
         run: |
           wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
           zcat < install-tl-unx.tar.gz | tar xf - # note final - on that command line
           cd install-tl-2*
-          sudo perl ./install-tl --no-interaction --scheme=small --no-doc-install --no-src-install
-          export PATH=/usr/local/texlive/2025/bin/x86_64-linux:$PATH
-      - name: Install Dependencies
+          sudo perl ./install-tl --no-interaction --scheme=small --no-doc-install --no-src-install -texdir /usr/local/texlive/current
+          export PATH=/usr/local/texlive/current/bin/x86_64-linux:$PATH
+      - name: Install LaTeX Packages
         # Pandoc = self-explanatory
         # fonts-liberation = The main font I use
         # texlive-base = The LaTeX base package
@@ -46,8 +51,7 @@ jobs:
         # sudo tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2023/tlnet-final/
         # sudo apt install pandoc fonts-liberation texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
         run: |
-          sudo apt update
-          sudo apt install pandoc fonts-liberation poppler-utils
+          export PATH=/usr/local/texlive/current/bin/x86_64-linux:$PATH
           sudo tlmgr init-usertree
           sudo tlmgr update --self --all
           sudo tlmgr install fontawesome6
