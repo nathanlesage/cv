@@ -5,7 +5,9 @@
 # generic information. Please have a look into the README.md of this repository
 # for a full explanation!
 name: Hendrik Erz, PhD
-occupation: "" # Postdoktor
+accentColor: 0.0,0.0,0.0
+textColor: 0.0,0.0,0.0
+occupation: "Postdoc"
 address:
   - "Institute for Analytical Sociology (IAS)"
   - "Linköping University"
@@ -14,14 +16,16 @@ address:
   - "Kungsgatan 56, Entrance 56D"
   - "601 74 Norrköping, Sweden"
 contact:
-  - "**Email**: [hendrik.erz@liu.se](mailto:hendrik.erz@liu.se)"
-  - "**Website**: [hendrik-erz.de](https://www.hendrik-erz.de/)"
-  - "**ORCID**: [0000-0003-0775-5919](https://orcid.org/0000-0003-0775-5919)"
-  - "\\ "
-  - "**Bluesky**: [@hendrik-erz.de](https://bsky.app/profile/hendrik-erz.de)"
-  - "**Mastodon**: [@hendrikerz@scholar.social](https://scholar.social/@hendrikerz)"
-mainfont: Liberation Sans
-sansfont: Liberation Sans
+  email: hendrik.erz@liu.se
+  orcid: 0000-0003-0775-5919
+  scholar: L8y-sWQAAAAJ
+  website: https://www.hendrik-erz.de/
+  website_title: hendrik-erz.de
+  bluesky: "hendrik-erz.de" # Without @!
+  mastodon: "https://scholar.social/@hendrikerz"
+  mastodon_title: "@hendrikerz@scholar.social"
+#mainfont: Liberation Sans
+#sansfont: Liberation Sans
 sections:
   - title: Education
     items:
@@ -64,7 +68,7 @@ sections:
       - text: "**Manuscripts in Preparation** (available upon request)"
       - text: "**Hendrik Erz**. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990. (Preprint available at SocArXiv: \\url{https://doi.org/10.31235/osf.io/fxrzk_v1})"
       - text: "**Hendrik Erz**. Brittle Parties? Dissent, Breaking Ranks, and Party Power in U.S. Congress."
-      - text: "**Hendrik Erz**. Think Alike, Talk Alike? Measuring Issue-Level Polarization in Congressional Speech Using Community Detection-Algorithms."
+      - text: "**Hendrik Erz**. Think Alike, Talk Alike? Measuring Issue-Level Polarization in Congressional Speech Using Community Detection-Algorithms. (*Under review*)"
       - text: "**Hendrik Erz**, Sebastian Giessler. Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software."
       # Peer Reviewed Publications
       - text: "**Peer-Reviewed Articles**"
