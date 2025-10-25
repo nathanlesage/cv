@@ -50,13 +50,14 @@ jobs:
 
         # sudo tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2023/tlnet-final/
         # sudo apt install pandoc fonts-liberation texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
+        # NOTE: sudo has a different PATH!
         run: |
-          export PATH=/usr/local/texlive/current/bin/x86_64-linux:$PATH
-          sudo tlmgr init-usertree
-          sudo tlmgr update --self --all
-          sudo tlmgr install fontawesome6
+          sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr init-usertree
+          sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr update --self --all
+          sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install fontawesome6
       - name: Produce PDF
         run: |
+          export PATH=/usr/local/texlive/current/bin/x86_64-linux:$PATH
           pandoc --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
           pandoc --output=CV.stub.html --embed-resources --template=cv.template.htm CV.md
       - name: Update Preview PNG
