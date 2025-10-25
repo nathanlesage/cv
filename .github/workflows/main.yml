@@ -47,6 +47,8 @@ jobs:
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr update --self --all
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install fontawesome6
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install sectsty
+          sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install babel
+          sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install greek-fontenc
       - name: Produce PDF
         run: |
           export PATH=/usr/local/texlive/current/bin/x86_64-linux:$PATH
