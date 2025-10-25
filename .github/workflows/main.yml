@@ -22,6 +22,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: master
+      - name: Install LaTeX
+        # see https://tug.org/texlive/quickinstall.html
+        # For `install-tl`, see https://tug.org/texlive/doc/install-tl.html
+        run: |
+          wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+          zcat < install-tl-unx.tar.gz | tar xf - # note final - on that command line
+          cd install-tl-2*
+          sudo perl ./install-tl --no-interaction --scheme=small --no-doc-install --no-src-install
+          export PATH=/usr/local/texlive/2025/bin/x86_64-linux:$PATH
       - name: Install Dependencies
         # Pandoc = self-explanatory
         # fonts-liberation = The main font I use
@@ -33,10 +42,12 @@ jobs:
         # poppler-utils = Required for the automated PDF->PNG conversion later in this workflow.
         # fontawesome6 = Provides Icons for contact section
         # NOTE: We need to enforce usage of an old repository that matches whatever GitHub has available.
+
         # sudo tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2023/tlnet-final/
+        # sudo apt install pandoc fonts-liberation texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
         run: |
           sudo apt update
-          sudo apt install pandoc fonts-liberation texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
+          sudo apt install pandoc fonts-liberation poppler-utils
           sudo tlmgr init-usertree
           sudo tlmgr update --self --all
           sudo tlmgr install fontawesome6
