@@ -30,9 +30,11 @@ jobs:
         # texlive-lang-english = Language data for English
         # texlive-lang-greek = Another package that turned out to be required as of Jan 14, 2025
         # poppler-utils = Required for the automated PDF->PNG conversion later in this workflow.
+        # fontawesome6 = Provides Icons for contact section
         run: |
           sudo apt update
           sudo apt install pandoc fonts-liberation texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
+          sudo tlmgr install fontawesome6
       - name: Produce PDF
         run: |
           pandoc --output=CV.pdf --pdf-engine=xelatex --template=cv.template.tex CV.md
