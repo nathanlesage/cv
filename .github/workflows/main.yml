@@ -33,11 +33,12 @@ jobs:
         # poppler-utils = Required for the automated PDF->PNG conversion later in this workflow.
         # fontawesome6 = Provides Icons for contact section
         # NOTE: We need to enforce usage of an old repository that matches whatever GitHub has available.
+        # sudo tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2023/tlnet-final/
         run: |
           sudo apt update
           sudo apt install pandoc fonts-liberation texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
           sudo tlmgr init-usertree
-          sudo tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2023/tlnet-final/
+          sudo tlmgr update --self --all
           sudo tlmgr install fontawesome6
       - name: Produce PDF
         run: |
