@@ -49,6 +49,7 @@ jobs:
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install sectsty
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install babel
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install greek-fontenc
+          sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install enumitem
       - name: Produce PDF
         run: |
           export PATH=/usr/local/texlive/current/bin/x86_64-linux:$PATH
