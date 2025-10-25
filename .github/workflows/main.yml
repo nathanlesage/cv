@@ -23,13 +23,16 @@ jobs:
         with:
           ref: master
       - name: Run APT
+        # Pandoc = self-explanatory
+        # fonts-liberation = The main font I use
+        # poppler-utils = Required for the automated PDF->PNG conversion later in this workflow.
         run: |
           sudo apt update
           sudo apt install pandoc fonts-liberation poppler-utils
       - name: Install LaTeX
         # see https://tug.org/texlive/quickinstall.html
         # For `install-tl`, see https://tug.org/texlive/doc/install-tl.html
-        # NOTE: Overwriting texlive dir so that it remains stable.
+        # NOTE: Overwriting texlive directory so that it remains stable.
         run: |
           wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
           zcat < install-tl-unx.tar.gz | tar xf - # note final - on that command line
@@ -37,24 +40,13 @@ jobs:
           sudo perl ./install-tl --no-interaction --scheme=small --no-doc-install --no-src-install -texdir /usr/local/texlive/current
           export PATH=/usr/local/texlive/current/bin/x86_64-linux:$PATH
       - name: Install LaTeX Packages
-        # Pandoc = self-explanatory
-        # fonts-liberation = The main font I use
-        # texlive-base = The LaTeX base package
-        # texlive-xetex = The XeLaTeX compiler
-        # texlive-latex-extra = A small set of additional TeX packages
-        # texlive-lang-english = Language data for English
-        # texlive-lang-greek = Another package that turned out to be required as of Jan 14, 2025
-        # poppler-utils = Required for the automated PDF->PNG conversion later in this workflow.
+        # NOTE: sudo has a different PATH -> use absolute path to binary!
         # fontawesome6 = Provides Icons for contact section
-        # NOTE: We need to enforce usage of an old repository that matches whatever GitHub has available.
-
-        # sudo tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2023/tlnet-final/
-        # sudo apt install pandoc fonts-liberation texlive-base texlive-xetex texlive-latex-extra texlive-lang-english texlive-lang-greek poppler-utils
-        # NOTE: sudo has a different PATH!
         run: |
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr init-usertree
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr update --self --all
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install fontawesome6
+          sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install sectsty
       - name: Produce PDF
         run: |
           export PATH=/usr/local/texlive/current/bin/x86_64-linux:$PATH
