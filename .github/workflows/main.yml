@@ -24,7 +24,7 @@ jobs:
           ref: master
       - name: Run APT
         run: |
-          sudo apt update && sudo apt upgrade
+          sudo apt update
           sudo apt install pandoc fonts-liberation poppler-utils
       - name: Install LaTeX
         # see https://tug.org/texlive/quickinstall.html
