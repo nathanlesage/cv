@@ -33,6 +33,9 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 
+% Icons
+\usepackage{fontawesome6}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Define default colors
@@ -129,23 +132,26 @@ $endif$
 % in a two-column layout. Note that the end of the first minipage
 % MUST be on the same line as the begin of the second (which we do
 % by using a percent-sign IMMEDIATELY after the end.)
-\begin{minipage}[t]{0.48\textwidth}
-$if(occupation)$
-\textbf{$occupation$} \\
-\\
-$endif$
-% Print the address line(s)
-$for(address)$$address$ $sep$ \\$endfor$
-\end{minipage}%
-\begin{minipage}[t]{0.48\textwidth}
-%\begin{flushright}
+\noindent
+\begin{minipage}{0.6\textwidth}
+$if(occupation)$\textbf{$occupation$} \\\\$endif$% No newline here
+$for(address)$$address$ $sep$ \\$endfor$ % Print the address line(s)
+\end{minipage}% NOTE the load-bearing comment
+\begin{minipage}{0.5\textwidth}
 % Print contact info if there is some.
 $if(contact)$
-  \textbf{Contact} \\
-    \\
-    $for(contact)$$contact$ $sep$ \\$endfor$
+  \begin{tabular}{ r l }
+    & \textbf{Contact} \\ [2ex] % Adds some space
+    $if(contact.email)$\faEnvelope & \href{mailto:$contact.email$}{$contact.email$}\\ [0.5ex]$endif$
+    $if(contact.phone)$\faPhone & \href{tel:$contact.phone$}{$contact.phone$} \\ [0.5ex]$endif$
+    $if(contact.orcid)$\faOrcid & \href{https://orcid.org/$contact.orcid$}{$contact.orcid$}\\ [0.5ex]$endif$
+    $if(contact.scholar)$\faGoogleScholar & \href{https://scholar.google.com/citations?user=$contact.scholar$}{Scholar} \\ [0.5ex]$endif$
+    $if(contact.website)$\faGlobe & $if(contact.website_title)$\href{$contact.website$}{$contact.website_title$}$else$\url{$contact.website$}$endif$\\$endif$ [2ex]
+    $if(contact.bluesky)$\faBluesky & \href{https://bsky.app/profile/@$contact.bluesky$}{@$contact.bluesky$}\\ [0.5ex]$endif$
+    $if(contact.twitter)$\faTwitter & \href{https://www.twitter.com/$contact.twitter$}{@$contact.twitter$}\\ [0.5ex]$endif$
+    $if(contact.mastodon)$\faMastodon & $if(contact.mastodon_title)$\href{$contact.mastodon$}{$contact.mastodon_title$}$else$\url{$contact.mastodon$}$endif$\\$endif$
+  \end{tabular}
 $endif$
-%\end{flushright}
 \end{minipage}
 
 % Here comes the custom body text (the text from the Markdown document)

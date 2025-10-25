@@ -90,12 +90,18 @@ address:
   - Institute for Analytical Sociology # Imagine a "\newline" here
   - Linköping University # Same
   - 601 74 Norrköping, Sweden # No newline here.
-# "Contact" is also basically just a list of strings which you can omit
-# if you don't want to be contacted.
-# NOTE: These properties will all be wrapped in "\url{}"!
+# "Contact" has a set of named properties that are all optional and will appear
+# in a fixed order. the "_title"-properties allow customizing the corresponding
+# link titles. This is necessary due to limitations in Pandoc's template engine.
 contact:
-  - hendrik.erz@liu.se
-  - https://www.hendrik-erz.de/
+  email: hendrik.erz@liu.se
+  phone: +1 234 56 789
+  orcid: 0000-0003-0775-5919
+  website: https://www.hendrik-erz.de/
+  website_title: hendrik-erz.de
+  bluesky: "hendrik-erz.de" # Without @!
+  mastodon: "https://scholar.social/@hendrikerz"
+  mastodon_title: "@hendrikerz@scholar.social"
 # Now follows the main portion.
 # sections takes a list of -- you guessed it: sections! Each section
 # has a title, which will be -- you again guessed it: the title of it.
