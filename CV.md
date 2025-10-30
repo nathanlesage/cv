@@ -7,7 +7,7 @@
 name: Hendrik Erz, PhD
 accentColor: 0.0,0.0,0.0
 textColor: 0.0,0.0,0.0
-occupation: "Postdoc"
+occupation: "Researcher"
 address:
   - "Institute for Analytical Sociology (IAS)"
   - "Linköping University"
@@ -76,11 +76,13 @@ sections:
       - text: "**Hendrik Erz**. Brittle Parties? Dissent, Breaking Ranks, and Party Power in U.S. Congress."
       - text: "**Hendrik Erz**. Think Alike, Talk Alike? Measuring Issue-Level Polarization in Congressional Speech Using Community Detection-Algorithms. (*Under review*)"
       - text: "**Hendrik Erz**, Sebastian Giessler. Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software."
+      - text: "Alexandra Dirksen, Sebastian Giessler, **Hendrik Erz**. Ethics in Computer Science and Security Research."
       # Peer Reviewed Publications
       - text: "**Peer-Reviewed Articles**"
       - label: 2025
         text: "Manika Lamba, **Hendrik Erz** (2025). Thanking the World: Exploring gender-based differences in acknowledgment patterns and support systems in theses. Data and Information Management 100092. \\url{https://doi.org/10.1016/j.dim.2024.100092}"
-      - text: "Alexandra Dirksen, Sebastian Giessler, **Hendrik Erz**, Martin Johns, Tobias Fiebig (2025). Don’t Patch the Researcher, Patch the Game: A Systematic Approach for Responsible Research via Federated Ethics Boards. *Proceedings of the New Security Paradigms Workshop*, 126–141. New York, NY, USA: Association for Computing Machinery. \\url{https://doi.org/10.1145/3703465.3703475}"
+      - label: 2024
+        text: "Alexandra Dirksen, Sebastian Giessler, **Hendrik Erz**, Martin Johns, Tobias Fiebig (2024). Don’t Patch the Researcher, Patch the Game: A Systematic Approach for Responsible Research via Federated Ethics Boards. *Proceedings of the New Security Paradigms Workshop*, 126–141. New York, NY, USA: Association for Computing Machinery. \\url{https://doi.org/10.1145/3703465.3703475}"
       - label: 2019
         text:
           - "**Hendrik Erz** (2019). Der lange Schatten von Gustave Le Bon. Zum sprachlichen Einfluss der Crowd Science auf die Soziologie der Gewalt. Soziologiemagazin 2/2019, 71–88. \\url{https://doi.org/10.3224/soz.v12i2.06}"
@@ -139,6 +141,14 @@ sections:
     items:
       - label: 2025
         text:
+          - "**Vote Defection and Party Pressure in U.S. Congress**"
+          - "International Conference on Computational Social Science (IC2S2)"
+          - "Norrköping, Sweden"
+        text:
+          - "**Vote Defection and Party Power in U.S. Congress**"
+          - "Conference of the International Network of Analytical Sociologists (INAS)"
+          - "Columbia University, New York, USA"
+        text:
           - "**Vote Defection and Party Power in U.S. Congress**"
           - "Joint Spring Conference of the methods sections of DGS and AS"
           - "University of Leipzig, Germany"
@@ -190,10 +200,14 @@ sections:
           - "**Summer Institute in Computational Social Science (SICSS)**"
           - Lecture and workshop in ethics for CSS
           - Lecture and workshop in Computational Text Analysis
-      - label: 2022-2024
+      - label: Since 2024
+        text:
+          - "**Behavioral Mechanisms in the Social Sciences"
+          - "M.Sc. program; Lecturer (course director: Rodrigo Martínez Peña); Linköping University"
+      - label: Since 2022
         text:
           - "**Digital Strategies for the Social Sciences**"
-          - M.Sc. program; Teaching Assistant; Linköping University
+          - M.Sc. program; Teaching Assistant (2022-2024) and Course Director (Since 2025); Linköping University
       - label: 2023
         text:
           - "**Summer Institute in Computational Social Science (SICSS)**"
@@ -237,7 +251,7 @@ sections:
           - "Swedish Interdisciplinary Research School in Computational Social Science (SIRCSS), Norrköping, Sweden (with PI Jacob Habinek)"
       - label: Since 2022
         text:
-          - "Website administration; International Network of Analytical Sociologists (INAS)"
+          - "Website administration and newsletter; International Network of Analytical Sociologists (INAS)"
       - label: 2025
         text:
           - "Program Chair, International Conference on Computational Social Science (IC2S2), Norrköping"
@@ -274,10 +288,10 @@ sections:
   - title: Referees
     items:
       - text:
-        - "Prof. Dr. Marc Keuschnigg (<marc.keuschnigg@uni-leipzig.de>)"
-        - "Prof. Dr. Jacob Habinek (<jacob.habinek@liu.se>)"
-        - "Prof. Dr. Étienne Ollion (<etienne.ollion@polytechnique.edu>)"
-        - "Prof. Dr. Peter Hedström (<peter.hedstrom@liu.se>)"
+        - "Prof. Dr. Marc Keuschnigg"
+        - "Prof. Dr. Jacob Habinek"
+        - "Prof. Dr. Étienne Ollion"
+        - "Prof. Dr. Peter Hedström"
   - title: Academic Software
     items:
       - label: Since 2017
@@ -288,7 +302,7 @@ sections:
     items:
       - text:
           - "German (native), English (fluent, C1),"
-          - "Swedish (Moderate, B1), French (Moderate, A2)"
+          - "Swedish (Moderate, A2), French (Moderate, A2)"
   - title: "Programming Languages & Frameworks"
     items:
       - label: Scientific
@@ -303,5 +317,5 @@ sections:
 
 Political Sociology, Computational Social Science, Analytical Sociology,
 Computational Text Analysis/NLP,
-Legislative Debates, Policymaking, U.S. Congress,
+Legislative Debates, U.S. Congress,
 Science of Science, Ethics of AI
