@@ -144,11 +144,11 @@ sections:
           - "**Vote Defection and Party Pressure in U.S. Congress**"
           - "International Conference on Computational Social Science (IC2S2)"
           - "Norrköping, Sweden"
-        text:
+      - text:
           - "**Vote Defection and Party Power in U.S. Congress**"
           - "Conference of the International Network of Analytical Sociologists (INAS)"
           - "Columbia University, New York, USA"
-        text:
+      - text:
           - "**Vote Defection and Party Power in U.S. Congress**"
           - "Joint Spring Conference of the methods sections of DGS and AS"
           - "University of Leipzig, Germany"
