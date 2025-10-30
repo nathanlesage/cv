@@ -146,7 +146,7 @@ $if(contact)$
     $if(contact.phone)$\faPhone & \href{tel:$contact.phone$}{$contact.phone$} \\ [0.5ex]$endif$
     $if(contact.orcid)$\faOrcid & \href{https://orcid.org/$contact.orcid$}{$contact.orcid$}\\ [0.5ex]$endif$
     $if(contact.scholar)$\faGoogleScholar & \href{https://scholar.google.com/citations?user=$contact.scholar$}{Scholar} \\ [0.5ex]$endif$
-    $if(contact.website)$\faGlobe & $if(contact.website_title)$\href{$contact.website$}{$contact.website_title$}$else$\url{$contact.website$}$endif$\\$endif$ [2ex]
+    $if(contact.website)$\faGlobe & $if(contact.website_title)$\href{$contact.website$}{$contact.website_title$}$else$\url{$contact.website$}$endif$\\ [0.5ex]$endif$
     $if(contact.bluesky)$\faBluesky & \href{https://bsky.app/profile/@$contact.bluesky$}{@$contact.bluesky$}\\ [0.5ex]$endif$
     $if(contact.twitter)$\faTwitter & \href{https://www.twitter.com/$contact.twitter$}{@$contact.twitter$}\\ [0.5ex]$endif$
     $if(contact.mastodon)$\faMastodon & $if(contact.mastodon_title)$\href{$contact.mastodon$}{$contact.mastodon_title$}$else$\url{$contact.mastodon$}$endif$\\$endif$
