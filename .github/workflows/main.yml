@@ -34,11 +34,14 @@ jobs:
         # For `install-tl`, see https://tug.org/texlive/doc/install-tl.html
         # NOTE: Overwriting texlive directory so that it remains stable.
         run: |
+          export CWD=$(pwd)
+          cd ..
           wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
           zcat < install-tl-unx.tar.gz | tar xf - # note final - on that command line
           cd install-tl-2*
           sudo perl ./install-tl --no-interaction --scheme=small --no-doc-install --no-src-install -texdir /usr/local/texlive/current
           export PATH=/usr/local/texlive/current/bin/x86_64-linux:$PATH
+          cd $CWD
       - name: Install LaTeX Packages
         # NOTE: sudo has a different PATH -> use absolute path to binary!
         # fontawesome6 = Provides Icons for contact section
