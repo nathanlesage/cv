@@ -202,7 +202,7 @@ sections:
           - Lecture and workshop in Computational Text Analysis
       - label: Since 2024
         text:
-          - "**Behavioral Mechanisms in the Social Sciences"
+          - "**Behavioral Mechanisms in the Social Sciences**"
           - "M.Sc. program; Lecturer (course director: Rodrigo Martínez Peña); Linköping University"
       - label: Since 2022
         text:
