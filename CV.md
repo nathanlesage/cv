@@ -285,13 +285,14 @@ sections:
       - text:
           - "American Sociological Association (ASA);"
           - "International Network of Analytical Sociologists (INAS)"
+          - "German Sociological Association (DGS)"
   - title: Referees
     items:
       - text:
-        - "Prof. Dr. Marc Keuschnigg"
-        - "Prof. Dr. Jacob Habinek"
-        - "Prof. Dr. Étienne Ollion"
-        - "Prof. Dr. Peter Hedström"
+        - "Prof. Dr. Marc Keuschnigg, University of Leipzig, Germany"
+        - "Prof. Dr. Jacob Habinek, Linköping University, Sweden"
+        - "Prof. Dr. Étienne Ollion, École Polytechnique, Paris, France"
+        - "Prof. Dr. Peter Hedström, Linköping University, Sweden"
   - title: Academic Software
     items:
       - label: Since 2017
@@ -301,7 +302,7 @@ sections:
   - title: Languages
     items:
       - text:
-          - "German (native), English (fluent, C1),"
+          - "German (native), English (fluent, C1 IELTS),"
           - "Swedish (Moderate, A2), French (Moderate, A2)"
   - title: "Programming Languages & Frameworks"
     items:
@@ -310,7 +311,7 @@ sections:
       - label: Frontend
         text: "JavaScript/TypeScript, HTML/CSS, Vue.js"
       - label: Backend
-        text: "Node.js, PHP, Rust, C/C++, Bash/ZSH"
+        text: "Node.js, PHP, Rust, C/C++, Bash/ZSH, SQL"
 ---
 
 # Research Interests
