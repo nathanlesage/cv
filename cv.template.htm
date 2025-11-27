@@ -5,6 +5,7 @@ $if(occupation)$
 $endif$
 
 <dl id="metadata">
+  $if(address)$
   <dt>Address</dt>
   <dd>
     <!-- Address line(s) -->
@@ -14,6 +15,7 @@ $endif$
       $endfor$
     </div>
   </dd>
+  $endif$
 
   $if(contact)$
   <dt>Contact</dt>
