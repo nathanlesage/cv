@@ -8,12 +8,12 @@ name: Hendrik Erz, PhD
 accentColor: 0.0,0.0,0.0
 textColor: 0.0,0.0,0.0
 #occupation: "Researcher"
-address:
-  - "Institute for Analytical Sociology (IAS)"
-  - "Linköping University"
-  - "Kopparhammaren 7"
-  - "Kungsgatan 56, Entrance 56D"
-  - "601 74 Norrköping, Sweden"
+#address:
+#  - "Institute for Analytical Sociology (IAS)"
+#  - "Linköping University"
+#  - "Kopparhammaren 7"
+#  - "Kungsgatan 56, Entrance 56D"
+#  - "601 74 Norrköping, Sweden"
 contact:
   email: hendrik.erz@liu.se
   orcid: 0000-0003-0775-5919
