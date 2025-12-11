@@ -197,6 +197,10 @@ sections:
     items:
       - label: 2025
         text:
+          - "**Python Workshop**"
+          - "M.Sc. program; Lecturer; Linköping University"
+          - "Full-day custom workshop with lecture parts introducing set-up, syntax, data analysis, and text classification with BERT"
+      - text:
           - "**Summer Institute in Computational Social Science (SICSS)**"
           - Lecture and workshop in ethics for CSS
           - Lecture and workshop in Computational Text Analysis
