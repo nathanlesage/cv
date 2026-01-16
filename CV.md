@@ -290,6 +290,7 @@ sections:
           - "American Sociological Association (ASA);"
           - "International Network of Analytical Sociologists (INAS)"
           - "German Sociological Association (DGS)"
+          - "Nordic Society for Computational Social Science (NoSoCSS)"
   - title: Referees
     items:
       - text:
