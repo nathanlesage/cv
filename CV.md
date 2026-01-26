@@ -256,6 +256,9 @@ sections:
       - label: Since 2022
         text:
           - "Website administration and newsletter; International Network of Analytical Sociologists (INAS)"
+      - label: 2026
+        text:
+          - "Program Chair, Workshop on Metascience and Critical Reflections in Security & Privacy (MetaCRiSP; Part of the IEEE Symposium on Security & Privacy)"
       - label: 2025
         text:
           - "Program Chair, International Conference on Computational Social Science (IC2S2), Norrköping"
