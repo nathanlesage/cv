@@ -36,6 +36,7 @@ sections:
           - ""
           - "**On the Record: Understanding A Century of Congressional Lawmaking Through Speech and Vote Behavior**"
           - "Supervisors: Jacob Habinek (IAS, Linköping), Étienne Ollion (CNRS, Paris)"
+          -  "Committee: Andrei Boutyline; Marshall A. Taylor, Alexandra Segerberg, Andreas Schmitz, Daniel Ritter"
       - label: 2017
         text: M.A. in Sociology, University of Bonn
       - label: 2014
@@ -74,7 +75,7 @@ sections:
       - text: "**Manuscripts in Preparation** (available upon request)"
       - text: "**Hendrik Erz**. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990. (Preprint available at SocArXiv: \\url{https://doi.org/10.31235/osf.io/fxrzk_v1})"
       - text: "**Hendrik Erz**. Brittle Parties? Dissent, Breaking Ranks, and Party Power in U.S. Congress."
-      - text: "**Hendrik Erz**. Think Alike, Talk Alike? Measuring Issue-Level Polarization in Congressional Speech Using Community Detection-Algorithms. (*Under review*)"
+      - text: "**Hendrik Erz**. Measuring Issue-Level Polarization in Congressional Speech Using Community Detection-Algorithms. (*Under review*)"
       - text: "**Hendrik Erz**, Sebastian Giessler. Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software."
       - text: "Alexandra Dirksen, Sebastian Giessler, **Hendrik Erz**. Ethics in Computer Science and Security Research."
       # Peer Reviewed Publications
@@ -110,8 +111,17 @@ sections:
       - text: "Andreas Schulz, **Hendrik Erz**, Veronika Riedl (2019). How to make a Soziologiemagazin. Soziologiemagazin 1/2019. \\url{https://elibrary.utb.de/doi/pdf/10.3224/soz.v12i2.08} (accessed 07.01.21)"
       - label: 2017
         text: "**Hendrik Erz** (2017). Zygmunt Bauman: Die Angst vor den anderen. Review. Widerspruch 70/2017, 164–168."
+  - title: "Awards & Grants"
+    items:
+    - label: 2026
+      text:
+        - "**IEI resebidrag till disputerade forskare våren 2026**, Linköpings University (SEK 21,000; decision DNR IEI-2026-00294)"
   - title: Invited Talks
     items:
+    - label: 2026
+      text:
+        - "**Ethical Governance and Practices in Security & Privacy Research**"
+        - "IAS Annual Spring Retreat, Kolmården, Sweden"
     - label: 2025
       text:
         - "**Vote Defection and Party Pressure in U.S. Congress: Evidence from a Century of Vote and Speech Behavior**"
@@ -258,6 +268,7 @@ sections:
           - "Website administration and newsletter; International Network of Analytical Sociologists (INAS)"
       - label: 2026
         text:
+          - "Program Chair, CS2Nordics Conference"
           - "Program Chair, Workshop on Metascience and Critical Reflections in Security & Privacy (MetaCRiSP; Part of the IEEE Symposium on Security & Privacy)"
       - label: 2025
         text:
@@ -297,10 +308,10 @@ sections:
   - title: Referees
     items:
       - text:
-        - "Prof. Dr. Marc Keuschnigg, University of Leipzig, Germany"
         - "Prof. Dr. Jacob Habinek, Linköping University, Sweden"
         - "Prof. Dr. Étienne Ollion, École Polytechnique, Paris, France"
-        - "Prof. Dr. Peter Hedström, Linköping University, Sweden"
+        - "Prof. Dr. Marc Keuschnigg, University of Leipzig, Germany"
+        - "Prof. Dr. Marshall A. Taylor, New Mexico State University, United States"
   - title: Academic Software
     items:
       - label: Since 2017
