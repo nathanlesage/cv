@@ -295,9 +295,7 @@ sections:
           - "Student Research Symposium, University of Bonn, Germany"
   - title: Supervision
     items:
-      - text: "Co-Supervisor, M.Sc. thesis in CSS, Sophia Grill (2024)"
-      - text: "Co-Supervisor, M.Sc. thesis in CSS, Yiqiu Wang (2023)"
-      - text: "Co-Supervisor, M.Sc. thesis in CSS, Lijun Peng (2022)"
+      - text: "**Co-Supervisor, M.Sc. thesis in CSS**: Nino Janashia (2026); Muhammad Hassnain Abbas (2026); Sophia Grill (2024); Yiqiu Wang (2023); Lijun Peng (2022)"
   - title: Memberships
     items:
       - text:
