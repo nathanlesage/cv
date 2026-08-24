@@ -1,17 +1,47 @@
 % This template can be used to generate a CV from a Markdown file with a
 % YAML frontmatter. This template was created by Hendrik Erz <hendrik@zettlr.com>
 
+% Several instructions in this template come essentially directly from the
+% default LaTeX template Pandoc uses. This ensures that it mostly corresponds
+% with Pandoc and should be kept updated over time.
+
+% Include some Pandoc specific data that we require in order to support all
+% Pandoc features.
+$document-metadata.latex()$
+$passoptions.latex()$
+
 % We're using the KOMA Article class
 \documentclass[11pt,a4paper]{scrartcl}
+
+% Before we do anything else, define the left margin which determines both the
+% overall text indent as well as the available space for the label items.
+\newlength{\labelmargin}
+\setlength{\labelmargin}{3cm}
+
+% Let the user redefine it in the frontmatter
+$if(labelmargin)$
+\setlength{\labelmargin}{$labelmargin$}
+$endif$
+
+% Now, based on the custom label margin, we can define our actual label width:
+\newlength{\cvlabelwidth}
+\usepackage{calc} % Required package to calculate new lengths
+\setlength{\cvlabelwidth}{\labelmargin-0.5cm}
+
+% Also, we need to pull back the left footer so that it is not aligned with the
+% main text, but rather has the same 2cm margin from the left edge as the right
+% footer has from the right.
+\newlength{\cvfooteroffset}
+\setlength{\cvfooteroffset}{\labelmargin-2cm} % The 2cm must be the same as right margin
 
 % Margin options (should be defined as soon as possible so that other packages
 % have access to the calculations and can calculate their own widths
 % accordingly.)
 \usepackage[
-  left=2cm,
+  left=\labelmargin, % needs to be bigger to account for the outdented item labels
   right=2cm,
   top=2cm,
-  bottom=3cm,
+  bottom=3cm, % Needs to be bigger to have the footer not cramped to the bottom
   nomarginpar
 ]{geometry}
 
@@ -33,15 +63,26 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 
+% This is used to use the adjustwidth package which allows us to define a
+% different margin for the header of the CV than for the CV sections.
+\usepackage{changepage}
+
 % Icons
 \usepackage{fontawesome6}
 \faStyle{regular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Additional Pandoc-specific includes required to support most Pandoc features.
+$fonts.latex()$
+$font-settings.latex()$
+$common.latex()$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Define default colors
 \definecolor{AccentColor}{rgb}{0.5,0.0,0.4}
 \definecolor{TextColor}{rgb}{0.2,0.2,0.2}
+\definecolor{MutedTextColor}{rgb}{0.5,0.5,0.5}
 
 % Allow the user to redefine the colors
 $if(accentColor)$
@@ -49,6 +90,9 @@ $if(accentColor)$
 $endif$
 $if(textColor)$
 \definecolor{TextColor}{rgb}{$textColor$}
+$endif$
+$if(mutedColor)$
+\definecolor{MutedTextColor}{rgb}{$mutedColor$}
 $endif$
 
 % The sections being used will all be colored in accent
@@ -80,12 +124,13 @@ $endif$
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead{} % No page header
-\fancyfoot[L]{\small\color{TextColor}$if(name)$$name$$endif$} % Left Author
-\fancyfoot[C]{\small\color{TextColor}\thepage} % Centered page number
-\fancyfoot[R]{\small\color{TextColor}Last updated: \today} % Right last updated
-% Prevent the rulers from showing up
+\fancyfoot[L]{\small\color{MutedTextColor}$if(name)$$name$$endif$} % Left Author
+\fancyfoot[C]{\small\color{TextColor}Page \thepage} % Centered page number
+\fancyfoot[R]{\small\color{MutedTextColor}Last updated: \today} % Right last updated
+% No horizontal rules between head/foot and main body
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\fancyfootoffset[L]{\cvfooteroffset}
 
 % Obligatory URL stuff: Make sure links look like normal
 % text and can be broken up to fit the page flow.
@@ -94,22 +139,35 @@ $endif$
 % This command makes URLs look like the rest of the text
 \urlstyle{same}
 
-% The package enumitem is the central package for the CV sections.
-% It is used to display a label in our accent color and also aligns
-% the text properly.
-% We're choosing a very narrow label width, so don't overdo it!
+% The package enumitem is the central package for the CV sections. It is used to
+% display a label in our accent color and also aligns the text properly. We're
+% choosing a very narrow label width, so keep labels brief. It is intended only
+% for year numbers. I have validated that this works with single years (2026),
+% year-ranges (2024-2026), and "Since" labels (Since 2024). Anything longer may
+% reach into the printer margins or even get cut off from the page. If you
+% really need bigger labels, adjust these numbers.
 % Please also note, if you're customising this, that labelsep should
 % be the opposite of itemindent, since otherwise all lines except the
 % first one of an item's "text" will be wrongly indented.
 \usepackage{enumitem}
+% Documentation for allowed values: https://mirrors.hust.edu.cn/CTAN/macros/latex/contrib/enumitem/enumitem.pdf
 \setlist[description]{
-  labelwidth=2cm,
-  itemindent=-1cm,
-  labelsep=1cm,
-  align=right,
-  left=2cm,
+  % Label spacing:
+  labelwidth=\cvlabelwidth, % Width of the label description
+  labelsep=0.5cm, % Space between label and item
+  align=right, % Label alignment
+  labelindent=-\labelmargin, % Pull the labels into the margin
+  % Item values spacing:
+  leftmargin=0cm, % Make the item values align with the headings/page margin
+  itemindent=!, % ! means: calculate from other values
   font=\color{AccentColor}
 }
+% TIP: The package makes the following horizontal spacing assumptions (taken
+% from enumitem, p. 6):
+% <labelindent> <labelwidth> <labelsep - itemindent>   <itemindent>
+% [                    leftmargin                  ]
+% RELATIONSHIP BETWEEN VALUES:
+% leftmargin + itemindent = labelindent + labelwidth = labelsep
 
 % Remove all heading numberings (even from the custom body-text)
 \makeatletter
@@ -126,6 +184,11 @@ $endif$
 % Immediately switch to text color
 \color{TextColor}
 
+% Make the header of the CV have the standard 2cm margin. NOTE: This command
+% adds and subtracts the numbers from the existing margins, it does not define
+% absolute margins.
+\begin{adjustwidth}{-1cm}{0cm}
+
 % Main heading is the name. Warn the user if they forgot the property.
 \part*{$if(name)$$name$$else$Please provide a name!$endif$}
 
@@ -135,13 +198,14 @@ $endif$
 % by using a percent-sign IMMEDIATELY after the end.)
 \noindent
 $if(address)$
-\begin{minipage}{0.6\textwidth}
-$if(occupation)$\textbf{$occupation$} \\\\$endif$% No newline here
-$for(address)$$address$ $sep$ \\$endfor$ % Print the address line(s)
-\end{minipage}% NOTE the load-bearing comment
-\begin{minipage}{0.5\textwidth}
-% Print contact info if there is some.
-$if(contact)$
+  % We have an address section -> two minipages to have two blocks
+  \begin{minipage}{0.6\textwidth}
+  $if(occupation)$\textbf{$occupation$} \\\\$endif$% No newline here
+  $for(address)$$address$ $sep$ \\$endfor$ % Print the address line(s)
+  \end{minipage}% NOTE the load-bearing comment
+  \begin{minipage}{0.5\textwidth}
+  % Print contact info if there is some.
+  $if(contact)$
   \begin{tabular}{ r l }
     & \textbf{Contact} \\ [2ex] % Adds some space
     $if(contact.email)$\faEnvelope & \href{mailto:$contact.email$}{$contact.email$}\\ [0.5ex]$endif$
@@ -153,36 +217,45 @@ $if(contact)$
     $if(contact.twitter)$\faTwitter & \href{https://www.twitter.com/$contact.twitter$}{@$contact.twitter$}\\ [0.5ex]$endif$
     $if(contact.mastodon)$\faMastodon & $if(contact.mastodon_title)$\href{$contact.mastodon$}{$contact.mastodon_title$}$else$\url{$contact.mastodon$}$endif$\\$endif$
   \end{tabular}
-$endif$
-\end{minipage}
+  $endif$
+  \end{minipage}
 $elseif(contact)$
-\begin{center}
-\small
-$if(contact.email)$\faEnvelope{} \href{mailto:$contact.email$}{$contact.email$}$endif$%
-$if(contact.phone)$\, \faPhone{} \href{tel:$contact.phone$}{$contact.phone$}$endif$%
-$if(contact.orcid)$\, \faOrcid{} \href{https://orcid.org/$contact.orcid$}{$contact.orcid$}$endif$%
-$if(contact.scholar)$\, \faGoogleScholar{} \href{https://scholar.google.com/citations?user=$contact.scholar$}{Scholar}$endif$%
-$if(contact.website)$\, \faGlobe{} $if(contact.website_title)$\href{$contact.website$}{$contact.website_title$}$else$\url{$contact.website$}$endif$$endif$%
-$if(contact.bluesky)$\, \faBluesky{} \href{https://bsky.app/profile/@$contact.bluesky$}{@$contact.bluesky$}$endif$%
-$if(contact.twitter)$\, \faTwitter{} \href{https://www.twitter.com/$contact.twitter$}{@$contact.twitter$}$endif$%
-$if(contact.mastodon)$\, \faMastodon{} $if(contact.mastodon_title)$\href{$contact.mastodon$}{$contact.mastodon_title$}$else$\url{$contact.mastodon$}$endif$$endif$%
-\end{center}
+  % We don't have an address block, only contact -> single-line
+  \begin{center}
+  \small
+  $if(contact.email)$\faEnvelope{} \href{mailto:$contact.email$}{$contact.email$}$endif$%
+  $if(contact.phone)$\, \faPhone{} \href{tel:$contact.phone$}{$contact.phone$}$endif$%
+  $if(contact.orcid)$\, \faOrcid{} \href{https://orcid.org/$contact.orcid$}{$contact.orcid$}$endif$%
+  $if(contact.scholar)$\, \faGoogleScholar{} \href{https://scholar.google.com/citations?user=$contact.scholar$}{Scholar}$endif$%
+  $if(contact.website)$\, \faGlobe{} $if(contact.website_title)$\href{$contact.website$}{$contact.website_title$}$else$\url{$contact.website$}$endif$$endif$%
+  $if(contact.bluesky)$\, \faBluesky{} \href{https://bsky.app/profile/@$contact.bluesky$}{@$contact.bluesky$}$endif$%
+  $if(contact.twitter)$\, \faTwitter{} \href{https://www.twitter.com/$contact.twitter$}{@$contact.twitter$}$endif$%
+  $if(contact.mastodon)$\, \faMastodon{} $if(contact.mastodon_title)$\href{$contact.mastodon$}{$contact.mastodon_title$}$else$\url{$contact.mastodon$}$endif$$endif$%
+  \end{center}
 $endif$
 
 % Here comes the custom body text (the text from the Markdown document)
 $body$
 
-% Separate the CV header from the sections with a nice ruler.
-{\color{AccentColor}\rule{\linewidth}{0.5mm}}
+% Separate the CV header from the sections with a ruler.
+{\color{AccentColor}\rule{\linewidth}{0.2mm}}
+
+% End special margins area here
+\end{adjustwidth}
 
 % Now come the sections
 $for(sections)$
 \section*{$sections.title$}
 
-% NOTE: The "description" is being set up in the header with the setlist-command
+% NOTE: The "description" environment is being set up in the header with the
+% setlist-command.
 \begin{description}
 
 $for(sections.items)$
+% DEBUG: Use the following command to draw the various spacings for debugging
+% purposes: \DrawEnumitemLabel
+% The command draws two vertical lines to indicate the leftmargin, and four
+% horizontal bars, in this order: labelindent, labelwidth, labelsep, itemindent
 \item [$if(sections.items.label)$$sections.items.label$$endif$] $for(sections.items.text)$$sections.items.text$$sep$ \newline $endfor$ 
 $endfor$
 

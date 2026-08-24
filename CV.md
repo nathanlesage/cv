@@ -25,8 +25,6 @@ contact:
   # BUG: https://github.com/jgm/pandoc/issues/10570
   #mastodon: "https://scholar.social/%40hendrikerz"
   #mastodon_title: "&#0064;hendrikerz&#0064;scholar.social"
-#mainfont: Liberation Sans
-#sansfont: Liberation Sans
 sections:
   - title: Education
     items:
@@ -72,14 +70,14 @@ sections:
   - title: Publications
     items:
       # Manuscripts in Preparation
-      - text: "**Manuscripts in Preparation** (available upon request)"
-      - text: "**Hendrik Erz**. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990. (Preprint available at SocArXiv: \\url{https://doi.org/10.31235/osf.io/fxrzk_v1})"
-      - text: "**Hendrik Erz**. Brittle Parties? Dissent, Breaking Ranks, and Party Power in U.S. Congress."
+      - text: "[Manuscripts in Preparation (available upon request)]{.underline}"
       - text: "**Hendrik Erz**. Measuring Issue-Level Polarization in Congressional Speech Using Community Detection-Algorithms. (*Under review*)"
+      - text: "**Hendrik Erz**. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990. (*Under review*; preprint: \\url{https://doi.org/10.31235/osf.io/fxrzk_v1})"
+      - text: "**Hendrik Erz**. Brittle Parties? Dissent, Breaking Ranks, and Party Power in U.S. Congress."
       - text: "**Hendrik Erz**, Sebastian Giessler. Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software."
       - text: "Alexandra Dirksen, Sebastian Giessler, **Hendrik Erz**. Ethics in Computer Science and Security Research."
       # Peer Reviewed Publications
-      - text: "**Peer-Reviewed Articles**"
+      - text: "[Peer-Reviewed Articles]{.underline}"
       - label: 2025
         text: "Manika Lamba, **Hendrik Erz** (2025). Thanking the World: Exploring gender-based differences in acknowledgment patterns and support systems in theses. Data and Information Management 100092. \\url{https://doi.org/10.1016/j.dim.2024.100092}"
       - label: 2024
@@ -89,13 +87,19 @@ sections:
           - "**Hendrik Erz** (2019). Der lange Schatten von Gustave Le Bon. Zum sprachlichen Einfluss der Crowd Science auf die Soziologie der Gewalt. Soziologiemagazin 2/2019, 71–88. \\url{https://doi.org/10.3224/soz.v12i2.06}"
           - "(*\"The long shadow of Gustave Le Bon. On the linguistic influence of Crowd Science on the Sociology of Violence.\"*)"
       # Books and Book chapters
-      - text: "**Books and Book Chapters**"
+      - text: "[Books and Book Chapters]{.underline}"
       - label: 2025
         text: "**Hendrik Erz** (2025). On the Record: Understanding a Century of Congressional Lawmaking through Speech and Vote Behavior. Linköping University Press. \\url{https://doi.org/10.3384/9789181182828}"
       - label: 2018
         text: "**Hendrik Erz** (2018). Karl Marx und das digitale Zeitalter, in: Klasse, Kapital und Revolution. 200 Jahre Marx. Dietz, Bonn, pp. 145–156."
+      # Edited Volumes
+      - text: "[Edited Volumes]{.underline}"
+      - label: 2020
+        text: "Tamara Schwertel, **Hendrik Erz** (2020). Paradigmenwechsel. Nach dem Ende der Geschichte ist vor dem Anfang der Geschichte. Soziologiemagazin 1/2020."
+      - label: 2022 # NOTE the pagebreak below, necessary (currently) to prevent a dangling heading
+        text: "**Hendrik Erz**, Nils Haacke (2022). Auseinanderdriften. Polarisierung, Radikalisierung und Konflikt. Soziologiemagazin 2/2022.\\pagebreak"
       # Other Publications
-      - text: "**Other Publications**"
+      - text: "[Other Publications]{.underline}"
       - label: 2023
         text:
           - "**Hendrik Erz**, Anastasia Menshikova (2023). Text als Daten. Extraktion von Variablen mittels LSTM-Netzwerken. In: Paula-Irene Villa (ed.) 2023: _Polarisierte Welten. Verhandlungen des 41. Kongresses der Deutschen Gesellschaft für Soziologie 2022_. \\url{https://publikationen.soziologie.de/index.php/kongressband_2022/article/view/1693}"
@@ -142,8 +146,7 @@ sections:
       text:
         - "**Discursive Dynamics in Policymaking: Economic Policymaking in U.S. Congress**"
         - "IAS Conference, Stockholm, Sweden"
-    - label: 2022
-      text:
+    - text:
         - "**Technological A11y: Zettlr Beyond the Code**"
         - "Staatliche Hochschule für Gestaltung, Karlsruhe, Germany"
     - label: 
@@ -238,10 +241,8 @@ sections:
         text:
           - "**Scientific Writing**"
           - B.A. program; Teacher; University of Bonn
-      - label: 2018
-        text:
-        - "**Introduction to Karl Marx' Capital (Reading Course)**"
-        - B.A. program; Course Director; University of Bonn
+          - "**Introduction to Karl Marx' Capital (Reading Course)**"
+          - B.A. program; Course Director; University of Bonn
       - label: 2015
         text:
           - "**Tutorial: Methods for Quantitative Sociology**"
@@ -268,13 +269,12 @@ sections:
           - "Website administration and newsletter; International Network of Analytical Sociologists (INAS)"
       - label: 2026
         text:
-          - "Program Chair, CS2Nordics Conference"
-          - "Program Chair, Workshop on Metascience and Critical Reflections in Security & Privacy (MetaCRiSP; Part of the IEEE Symposium on Security & Privacy)"
+          - "**Program Chair**, CS2Nordics Conference"
+          - "**Program Chair**, Workshop on Metascience and Critical Reflections in Security & Privacy"
+          - "(MetaCRiSP; Part of the IEEE Symposium on Security & Privacy)"
       - label: 2025
         text:
-          - "Program Chair, International Conference on Computational Social Science (IC2S2), Norrköping"
-      - label: 2025
-        text:
+          - "**Program Chair**, International Conference on Computational Social Science (IC2S2), Norrköping"
           - "Summer Instititute in Computational Social Science (SICSS), Norrköping, Sweden (with PI Jacob Habinek)"
       - label: 2024
         text:
@@ -312,15 +312,11 @@ sections:
         - "Prof. Dr. Marshall A. Taylor, New Mexico State University, United States"
   - title: Academic Software
     items:
-      - label: Since 2017
-        text: "Zettlr (Project Maintainer)"
-      - label: Since 2024
-        text: "Pandoc (Contributor)"
+      - text: "Zettlr (Project Maintainer; since 2017)"
+      - text: "Pandoc (Contributor; since 2024)"
   - title: Languages
     items:
-      - text:
-          - "German (native), English (fluent, C1 IELTS),"
-          - "Swedish (Moderate, A2), French (Moderate, A2)"
+      - text: "German (native), English (fluent, C1 IELTS), Swedish (Moderate, A2), French (Moderate, A2)"
   - title: "Programming Languages & Frameworks"
     items:
       - label: Scientific
