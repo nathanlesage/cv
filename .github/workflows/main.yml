@@ -13,6 +13,9 @@ on:
 permissions:
   contents: write
 
+env:
+  PANDOC_VERSION: "3.10.2"
+
 jobs:
   create_pdf:
     name: Create PDF
@@ -32,8 +35,8 @@ jobs:
       # what the APT repositories allow for.
       - name: Install Pandoc
         run: |
-          wget https://github.com/jgm/pandoc/releases/download/3.10.2/pandoc-3.10.2-1-amd64.deb
-          sudo dpkg -i pandoc-3.10.2-1-amd64.deb
+          wget https://github.com/jgm/pandoc/releases/download/$PANDOC_VERSION/pandoc-$PANDOC_VERSION-1-amd64.deb
+          sudo dpkg -i pandoc-$PANDOC_VERSION-1-amd64.deb
       - name: Install LaTeX
         # see https://tug.org/texlive/quickinstall.html
         # For `install-tl`, see https://tug.org/texlive/doc/install-tl.html
@@ -58,6 +61,7 @@ jobs:
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install realscripts
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install greek-fontenc
           sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install changepage
+          sudo /usr/local/texlive/current/bin/x86_64-linux/tlmgr install soul
       - name: Produce PDF
         run: |
           export PATH=/usr/local/texlive/current/bin/x86_64-linux:$PATH
