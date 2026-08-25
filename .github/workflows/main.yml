@@ -37,6 +37,7 @@ jobs:
         run: |
           wget https://github.com/jgm/pandoc/releases/download/$PANDOC_VERSION/pandoc-$PANDOC_VERSION-1-amd64.deb
           sudo dpkg -i pandoc-$PANDOC_VERSION-1-amd64.deb
+          rm pandoc-$PANDOC_VERSION-1-amd64.deb
       - name: Install LaTeX
         # see https://tug.org/texlive/quickinstall.html
         # For `install-tl`, see https://tug.org/texlive/doc/install-tl.html
