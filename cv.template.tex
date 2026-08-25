@@ -5,6 +5,11 @@
 % default LaTeX template Pandoc uses. This ensures that it mostly corresponds
 % with Pandoc and should be kept updated over time.
 
+% Include some Pandoc specific data that we require in order to support all
+% Pandoc features.
+$document-metadata.latex()$
+$passoptions.latex()$
+
 % We're using the KOMA Article class
 \documentclass[11pt,a4paper]{scrartcl}
 

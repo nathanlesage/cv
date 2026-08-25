@@ -23,12 +23,17 @@ jobs:
         with:
           ref: master
       - name: Run APT
-        # Pandoc = self-explanatory
         # fonts-liberation = The main font I use
         # poppler-utils = Required for the automated PDF->PNG conversion later in this workflow.
         run: |
           sudo apt update
-          sudo apt install pandoc fonts-liberation poppler-utils
+          sudo apt install fonts-liberation poppler-utils
+      # NOTE: We install Pandoc directly to have access to newer features than
+      # what the APT repositories allow for.
+      - name: Install Pandoc
+        run: |
+          wget https://github.com/jgm/pandoc/releases/download/3.10.2/pandoc-3.10.2-1-amd64.deb
+          sudo dpkg -i pandoc-3.10.2-1-amd64.deb
       - name: Install LaTeX
         # see https://tug.org/texlive/quickinstall.html
         # For `install-tl`, see https://tug.org/texlive/doc/install-tl.html
