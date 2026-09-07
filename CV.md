@@ -71,7 +71,7 @@ sections:
     items:
       # Manuscripts in Preparation
       - text: "[Manuscripts in Preparation (available upon request)]{.underline}"
-      - text: "**Hendrik Erz**. Measuring Issue-Level Polarization in Congressional Speech Using Community Detection-Algorithms. (*Under review*)"
+      - text: "**Hendrik Erz**. Measuring Issue-Level Polarization in Congressional Speech Using Community Detection-Algorithms. (*forthcoming, Network Science*)"
       - text: "**Hendrik Erz**. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990. (*Under review*; preprint: \\url{https://doi.org/10.31235/osf.io/fxrzk_v1})"
       - text: "**Hendrik Erz**. Brittle Parties? Dissent, Breaking Ranks, and Party Power in U.S. Congress."
       - text: "**Hendrik Erz**, Sebastian Giessler. Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software."
