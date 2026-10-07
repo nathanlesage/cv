@@ -71,13 +71,14 @@ sections:
     items:
       # Manuscripts in Preparation
       - text: "[Manuscripts in Preparation (available upon request)]{.underline}"
-      - text: "**Hendrik Erz**. Measuring Issue-Level Polarization in Congressional Speech Using Community Detection-Algorithms. (*forthcoming, Network Science*)"
       - text: "**Hendrik Erz**. Policymaking in Times of Crisis: Discursive Dynamics in U.S. Congress, 1960-1990. (*Under review*; preprint: \\url{https://doi.org/10.31235/osf.io/fxrzk_v1})"
       - text: "**Hendrik Erz**. Brittle Parties? Dissent, Breaking Ranks, and Party Power in U.S. Congress."
       - text: "**Hendrik Erz**, Sebastian Giessler. Language Models from the Sweatshop? Helping Researchers Avoid Ethical and Legal Issues With Off-The-Shelf Software."
       - text: "Alexandra Dirksen, Sebastian Giessler, **Hendrik Erz**. Ethics in Computer Science and Security Research."
       # Peer Reviewed Publications
       - text: "[Peer-Reviewed Articles]{.underline}"
+      - label: 2026
+        text: "**Hendrik Erz** (2026). Measuring Issue-Level Polarization in Congressional Speech Using Community Detection-Algorithms. *Network Science* (14). \\url{https://doi.org/10.1017/nws.2026.10049}"
       - label: 2025
         text: "Manika Lamba, **Hendrik Erz** (2025). Thanking the World: Exploring gender-based differences in acknowledgment patterns and support systems in theses. Data and Information Management 100092. \\url{https://doi.org/10.1016/j.dim.2024.100092}"
       - label: 2024
