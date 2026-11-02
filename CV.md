@@ -47,7 +47,12 @@ sections:
           - "Syracuse University, New York, United States"
   - title: Employment
     items:
-      - label: Since 2025
+      - label: Since 2026
+        text:
+          - "**Postdoc in Computational Social Science**"
+          - "GESIS – Leibniz Institute for the Social Sciences"
+          - "Center for Advanced Internet Studies (CAIS)"
+      - label: 2025-26
         text:
           - "**Researcher in Analytical Sociology**"
           - "Institute for Analytical Sociology (IAS)"
