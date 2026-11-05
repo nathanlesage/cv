@@ -335,7 +335,7 @@ sections:
 
 # Research Interests
 
-Political Sociology, Computational Social Science, Analytical Sociology,
+Political Sociology, Computational Social Science,
 Computational Text Analysis/NLP,
-Legislative Debates, U.S. Congress,
+Parliamentary Debates,
 Science of Science, Ethics of AI
